@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 临时个人主页</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on 临时个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 05 Aug 2019 10:09:12 -0400</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>长期更新</title>
+      <link>/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Mon, 05 Aug 2019 10:09:12 -0400</pubDate>
+      
+      <guid>/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

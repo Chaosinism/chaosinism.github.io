@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>长期更新 on 临时个人主页</title>
+    <link>/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/</link>
+    <description>Recent content in 长期更新 on 临时个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 05 Aug 2019 10:09:12 -0400</lastBuildDate>
+    
+	<atom:link href="/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自制资源汇总</title>
+      <link>/posts/homemade/</link>
+      <pubDate>Mon, 05 Aug 2019 10:09:12 -0400</pubDate>
+      
+      <guid>/posts/homemade/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面列举笔者自制资源，包含MMD模型、软件脚本、工程文件等。&lt;/li&gt;
+&lt;li&gt;依据资源性质，资源的使用与传播须遵循不同的协议，详情请参照每一项资源链接中的说明。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>资源网站汇总</title>
+      <link>/posts/website-list/</link>
+      <pubDate>Mon, 05 Aug 2019 09:51:55 -0400</pubDate>
+      
+      <guid>/posts/website-list/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面搜集整理网络上可用于多媒体制作的免费资源，自身并不提供资源的下载。&lt;/li&gt;
+&lt;li&gt;被列举的网站除免费资源外，可能也提供收费资源。此外，资源的使用遵循不同种类的协议，需要使用者自行鉴别。&lt;/li&gt;
+&lt;li&gt;本页面将不定期更新，移除失效链接。部分网站可能有访问区域限制，笔者没有精力逐一验证并注明，还请见谅。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>软件与工具汇总</title>
+      <link>/posts/tool-list/</link>
+      <pubDate>Mon, 05 Aug 2019 09:51:49 -0400</pubDate>
+      
+      <guid>/posts/tool-list/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面列举笔者体验过的开源或免费软件、工具，主要侧重于多媒体制作（包含绘图、3D、视频、音乐等）相关的功能。&lt;/li&gt;
+&lt;li&gt;表格中部分软件存在收费版本，但与免费版本的区别仅在于功能强弱，在使用时限、导入导出等关键要素上不存在限制。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
