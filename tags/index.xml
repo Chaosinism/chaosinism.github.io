@@ -6,10 +6,100 @@
     <description>Recent content in Tags on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 05 Aug 2019 10:09:12 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 03:57:42 -0400</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>/tags/c&#43;&#43;/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
+      
+      <guid>/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kinect</title>
+      <link>/tags/kinect/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
+      
+      <guid>/tags/kinect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MMD</title>
+      <link>/tags/mmd/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
+      
+      <guid>/tags/mmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>驱动</title>
+      <link>/tags/%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
+      
+      <guid>/tags/%E9%A9%B1%E5%8A%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>/tags/c#/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
+      
+      <guid>/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MIDI</title>
+      <link>/tags/midi/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
+      
+      <guid>/tags/midi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vegas</title>
+      <link>/tags/vegas/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
+      
+      <guid>/tags/vegas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件脚本</title>
+      <link>/tags/%E8%BD%AF%E4%BB%B6%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
+      
+      <guid>/tags/%E8%BD%AF%E4%BB%B6%E8%84%9A%E6%9C%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音乐</title>
+      <link>/tags/%E9%9F%B3%E4%B9%90/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
+      
+      <guid>/tags/%E9%9F%B3%E4%B9%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音MAD</title>
+      <link>/tags/%E9%9F%B3mad/</link>
+      <pubDate>Fri, 09 Aug 2019 03:57:14 -0400</pubDate>
+      
+      <guid>/tags/%E9%9F%B3mad/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>资源汇总</title>
