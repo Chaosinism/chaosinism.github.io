@@ -233,21 +233,10 @@ MMD内置的动作捕捉功能同样基于Kinect硬件。然而，用于Windows�
 
 
 
-<div id="comment-submitted" class="dialog">
-  <h3>Thank you</h3>
-  <p>您的留言已被提交，将在博主审核后显示在页面上。</p>
-  
-</div>
-
-<div id="comment-error" class="dialog">
-  <h3>OOPS!</h3>
-  <p>Your comment has not been submitted. Please <a href="/posts/kinect-mmd/">go back</a> and try again. Thank You!</p>
-  <p>If this error persists, please open an issue by <a href="https://github.com///issues"> clicking here</a>.</p>
-</div>
 
 <div id="comment-form">
-  <h1 id="comment-form-header">Say something</h1>
-  <form method="POST" action="https://dev.staticman.net/v3/entry/github////comments">
+  <h1 id="comment-form-header">留言</h1>
+  <form method="POST" action="https://staticman3.herokuapp.com/v2/entry/Chaosinism/chaosinism.github.io/master/comments">
     <input type="hidden" name="options[redirect]" value="/posts/kinect-mmd/#comment-submitted">
     <input type="hidden" name="options[redirectError]" value="/posts/kinect-mmd/#comment-error">
     <input type="hidden" name="options[slug]" value="kinect-mmd">
@@ -267,7 +256,7 @@ MMD内置的动作捕捉功能同样基于Kinect硬件。然而，用于Windows�
     </fieldset>
 
     <fieldset>
-      <textarea name="fields[body]" placeholder="留言内容（支持Markdown语法）" rows="10"></textarea>
+      <textarea name="fields[body]" placeholder="请输入留言内容（支持Markdown语法）。留言经博主审核后显示在网页上，此外可在本站Github仓库检查已提交的留言。" rows="10"></textarea>
     </fieldset>
 
     
