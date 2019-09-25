@@ -6,10 +6,23 @@
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Aug 2019 07:38:27 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2019 18:54:56 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>读书笔记-2019.08</title>
+      <link>/posts/reading-note-1908/</link>
+      <pubDate>Wed, 25 Sep 2019 18:54:56 -0400</pubDate>
+      
+      <guid>/posts/reading-note-1908/</guid>
+      <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+
+&lt;p&gt;我判断自己需要立刻开始提升语言表达能力，至少要达到正常人的平均水平，锻炼方式之一就是要经常写一些东西，所以我决定记录一些对于无关紧要的事物的感想。感想写出来，如果不发布或者只给熟人看，就难以真正获得提升；如果发表在公众平台，我就会被人骂死，最终结果就是我在个人博客开设了这样一个新栏目。&lt;/p&gt;
+
+&lt;p&gt;与其他栏目不同，我不能保证写下来的这些东西能为读者带来任何好处。如果您热爱收看“创人药”或“云杰说道”等节目，可以用同样的心态阅读下面的内容以消遣，否则可以跳过“个人感想”栏目内的所有文章。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>搭建个人主页的心得</title>
