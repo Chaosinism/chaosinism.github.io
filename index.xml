@@ -6,10 +6,19 @@
     <description>Recent content on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Sep 2019 18:54:56 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 03:53:14 -0400</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>杖刀偶磨弓 - 模型配布/说明</title>
+      <link>/posts/mmd-mayumi/</link>
+      <pubDate>Tue, 01 Oct 2019 03:53:14 -0400</pubDate>
+      
+      <guid>/posts/mmd-mayumi/</guid>
+      <description>&lt;p&gt;我以《东方Project》的新作角色“杖刀偶磨弓”为主角制作视频《┗|∵|┓磨弓的偶像宣言》（&lt;a href=&#34;https://www.bilibili.com/video/av68600342/&#34;&gt;Bilibili&lt;/a&gt;, &lt;a href=&#34;https://www.nicovideo.jp/watch/sm35721224&#34;&gt;Niconico&lt;/a&gt;），过程中也制作了该角色的3D模型，所以用MMD格式发布出来。可在&lt;a href=&#34;https://bowlroll.net/file/207898&#34;&gt;BowlRoll&lt;/a&gt;下载，另外也收录在了本博客的汇总页面。以下对模型内容、用到的制作和渲染方法等做一些介绍。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>读书笔记-2019.08</title>
