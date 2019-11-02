@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>AI创人药</title> 
+<style>
+body {font-size: 20px;}
+h1 {font-size:200%;}
+h2 {font-size:150%;}
+p {font-size:100%;}
+</style>
+</head>
+
+<body>
+<div>
+<h2>《创人药》之人机杂交</h2>
+<p>本应用为基于RNN与GRU的文本生成器，输入文章开头，即可模仿《创人药》的写作风格生成一段文字，，，</p>
+<p>转载请注明作者独人13，谢谢，，，</p>
+<p><i>（注：初次运行本应用时需下载约30M的神经网络模型数据，另外生成文本会花费一定时间，约与字数成正比。）</i></p>
+</div>
+
+<HR align=left width=1000 color=#000000 SIZE=1>
+<img src="creator.jpg">
+<div>
+  <div>起始语句:
+  <input id="starting_words" value="《创人药》之"></input>
+  </div>
+  <div>生成字数:
+  <input id="word_count" value="500"></input>
+  </div>
+  <div>温度（随机性）:
+  <input id="temperature" value="0.75"></input>
+  </div>
+  <div>
+    <button id="start_generating">开始生成</button>
+  </div>
+</div>
+
+<div>
+  <div>生成内容:</div><blockquote id="generated_text">，，，</blockquote>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+<script src="script.js"></script>
+	
+</body>
+</html>
