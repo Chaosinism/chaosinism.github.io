@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AI生成《创人药》 - 临时个人主页</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="AI生成《创人药》" />
+<meta property="og:description" content="最近感觉我们的创主独人13愈发整不出活了，于是打算用AI来代劳一下，就做了下面这个应用，利用机器学习来自动生成《创人药》。
+
+点击这里使用" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ai-duren13/" />
+<meta property="article:published_time" content="2019-11-03T03:54:27-04:00" />
+<meta property="article:modified_time" content="2019-11-03T03:54:27-04:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-145442293-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="临时个人主页" rel="home">
+				<div class="logo__title">临时个人主页</div>
+				
+				
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145442293-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/about-me/">关于我</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/homemade/">自制资源汇总</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/website-list/">资源网站汇总</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/tool-list/">软件与工具汇总</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">AI生成《创人药》</h1>
+			
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#原理介绍">原理介绍</a></li>
+<li><a href="#参考资料">参考资料</a></li>
+</ul></li>
+</ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>最近感觉我们的创主<a href="https://www.weibo.com/u/6729213800">独人13</a>愈发整不出活了，于是打算用AI来代劳一下，就做了下面这个应用，利用机器学习来自动生成《创人药》。</p>
+
+<p><a href="/rnn13">点击这里使用</a></p>
+
+<p>转载请注明作者“独人13”，谢谢，，，</p>
+
+<h2 id="原理介绍">原理介绍</h2>
+
+<p>这里使用流行的方法递归神经网络（Recurrent Neural Network, RNN）与长短期记忆（Long Short-Term Memory，LSTM），给定一个序列（具体到这里就是文本），可以预测出它的下一位（即下一个字），重复这个过程就能生成出完整的句子。</p>
+
+<p>用作训练的数据是独人老师以往的文章，主要写于2011到2013年，近年的新作也是有的，如《骗子的臭味》等，加起来大小约为850Kb，感觉数据还是不太充足，但也找不到更多材料了。我这次试用<a href="https://colab.research.google.com/">Google Colab</a>来在Google的云上训练它，发现居然比自己的电脑还快，，，</p>
+
+<p>为了把它变成一个在线应用，利用了<a href="https://www.tensorflow.org/js">TensorFlow.js</a>，即TensorFlow的Javascript实现，被它转换后的模型可以直接在浏览器运行，似乎完成度很高的样子，开发者不需要关注太多细节就能实现想要的功能。</p>
+
+<p>还有一个小问题，就是上面介绍的这些工具我全都不会用。所以还是发扬传统艺能，找别人现成的东西缝合一下。主要借鉴了以下的文章和代码。</p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<p><a href="https://www.tensorflow.org/tutorials/text/text_generation">https://www.tensorflow.org/tutorials/text/text_generation</a></p>
+
+<p><a href="https://leemeng.tw/how-to-generate-interesting-text-with-tensorflow2-and-tensorflow-js.html">https://leemeng.tw/how-to-generate-interesting-text-with-tensorflow2-and-tensorflow-js.html</a></p>
+
+<p><a href="https://codepen.io/caisq/pen/vrxOvy">https://codepen.io/caisq/pen/vrxOvy</a></p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/javascript/" rel="tag">JavaScript</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/posts/ld45/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Ludum Dare 45参赛体验&amp;作品</p></a>
+	</div>
+</nav>
+  <h2>评论</h2>
+  
+  
+  
+
+  
+    
+  
+    
+  
+
+  
+    <p>目前尚未有留言。</p>
+  
+
+
+
+
+<form method="POST" action="https://staticman3.herokuapp.com/v2/entry/Chaosinism/chaosinism.github.io/master/comments">
+    <input type="hidden" name="options[redirect]" value="https://chaosinism.github.io">
+    <input type="hidden" name="options[slug]" value="ai-duren13">
+    <input type="hidden" name="options[parent]" value="ai-duren13">
+    <input name="fields[name]" type="text" placeholder="昵称（必填）">
+    <input name="fields[email]" type="email" placeholder="邮箱（选填）">
+    <textarea name="fields[message]" placeholder="请输入留言内容（支持Markdown语法）。留言经博主审核后显示在网页上，此外可在本站Github仓库检查已提交的留言。" rows="10"></textarea>
+    <input type="submit" value="提交">
+  </form>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 临时个人主页.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
+</html>

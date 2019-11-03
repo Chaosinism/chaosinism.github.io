@@ -3,8 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/ai-duren13/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2019-10-07T19:02:00-04:00</lastmod>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -23,24 +64,6 @@
   <url>
     <loc>/posts/ld45/</loc>
     <lastmod>2019-10-07T19:02:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-10-07T19:02:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-10-07T19:02:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-10-07T19:02:00-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -117,12 +140,6 @@
   </url>
   
   <url>
-    <loc>/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2019-08-31T06:52:47-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/c&#43;&#43;/</loc>
     <lastmod>2019-08-09T03:57:42-04:00</lastmod>
     <priority>0</priority>
@@ -169,19 +186,7 @@
   </url>
   
   <url>
-    <loc>/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-08-09T03:57:34-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/%E8%BD%AF%E4%BB%B6%E8%84%9A%E6%9C%AC/</loc>
-    <lastmod>2019-08-09T03:57:34-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2019-08-09T03:57:34-04:00</lastmod>
     <priority>0</priority>
   </url>
