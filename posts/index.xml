@@ -6,10 +6,30 @@
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Nov 2019 03:54:27 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 02:27:16 -0500</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在线小游戏</title>
+      <link>/posts/tiny-games/</link>
+      <pubDate>Mon, 11 Nov 2019 02:27:16 -0500</pubDate>
+      
+      <guid>/posts/tiny-games/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面收录了我在各种场合制作的一些小游戏，或许可以用于取乐。其中多数游戏的代码与美术\音乐素材是开源的，欢迎分享与交流。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>读书笔记-2019.10</title>
+      <link>/posts/reading-note-1910/</link>
+      <pubDate>Mon, 11 Nov 2019 02:23:30 -0500</pubDate>
+      
+      <guid>/posts/reading-note-1910/</guid>
+      <description>&lt;p&gt;本月的读书笔记，三个月以来语言文字能力并没有什么提升，已经有点不想干了，总之先试着坚持到年底吧。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>AI生成《创人药》</title>
