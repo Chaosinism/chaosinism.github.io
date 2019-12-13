@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 11 Nov 2019 02:27:16 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 20:59:00 -0500</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>个人感想</title>
+      <link>/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</link>
+      <pubDate>Thu, 12 Dec 2019 20:59:00 -0500</pubDate>
+      
+      <guid>/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>长期更新</title>
@@ -17,15 +26,6 @@
       <pubDate>Mon, 11 Nov 2019 02:27:16 -0500</pubDate>
       
       <guid>/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>个人感想</title>
-      <link>/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</link>
-      <pubDate>Mon, 11 Nov 2019 02:23:30 -0500</pubDate>
-      
-      <guid>/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/</guid>
       <description></description>
     </item>
     
