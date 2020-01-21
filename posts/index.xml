@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 08 Jan 2020 01:27:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2020 16:35:00 -0400</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Touhou Fan Game Jam 5 参赛体验</title>
+      <link>/posts/thjam5/</link>
+      <pubDate>Mon, 20 Jan 2020 16:35:00 -0400</pubDate>
+      
+      <guid>/posts/thjam5/</guid>
+      <description>&lt;p&gt;第五届“Touhou Fan Game Jam”72小时制作赛的参赛体验和作品。实际上由于活动不到周末就开始了，只有两天可以用来进行制作，到最后各方面完成度都较为有限。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>读书笔记-2019.12</title>
