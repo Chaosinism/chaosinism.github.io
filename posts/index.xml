@@ -2,48 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 临时个人主页</title>
-    <link>/posts/</link>
+    <link>https://chaosinism.github.io/posts/</link>
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 Jan 2020 16:35:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 12:00:00 -0500</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chaosinism.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>网站主题更新</title>
+      <link>https://chaosinism.github.io/posts/theme-update/</link>
+      <pubDate>Thu, 13 Feb 2020 12:00:00 -0500</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/theme-update/</guid>
+      <description>今天将网站主题更换成了Hugo Theme Pure，比起原先的主题，内容分类更清晰一些，还有站内搜索之类的新功能。 另外因为评论系统是半手动的，我又经常</description>
+    </item>
+    
+    <item>
+      <title>读书笔记-2020.01</title>
+      <link>https://chaosinism.github.io/posts/reading-note-2001/</link>
+      <pubDate>Thu, 13 Feb 2020 11:21:00 -0500</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/reading-note-2001/</guid>
+      <description>&lt;p&gt;无言投下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Touhou Fan Game Jam 5 参赛体验</title>
-      <link>/posts/thjam5/</link>
+      <link>https://chaosinism.github.io/posts/thjam5/</link>
       <pubDate>Mon, 20 Jan 2020 16:35:00 -0400</pubDate>
       
-      <guid>/posts/thjam5/</guid>
+      <guid>https://chaosinism.github.io/posts/thjam5/</guid>
       <description>&lt;p&gt;第五届“Touhou Fan Game Jam”72小时制作赛的参赛体验和作品。实际上由于活动不到周末就开始了，只有两天可以用来进行制作，到最后各方面完成度都较为有限。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>读书笔记-2019.12</title>
-      <link>/posts/reading-note-1912/</link>
+      <link>https://chaosinism.github.io/posts/reading-note-1912/</link>
       <pubDate>Wed, 08 Jan 2020 01:27:00 -0500</pubDate>
       
-      <guid>/posts/reading-note-1912/</guid>
+      <guid>https://chaosinism.github.io/posts/reading-note-1912/</guid>
       <description>&lt;p&gt;整一个月都忙得要死，结果除了写这篇废话之外什么东西都没有制作，不知什么时候才能抽出时间继续整活。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>读书笔记-2019.11</title>
-      <link>/posts/reading-note-1911/</link>
+      <link>https://chaosinism.github.io/posts/reading-note-1911/</link>
       <pubDate>Thu, 12 Dec 2019 20:59:00 -0500</pubDate>
       
-      <guid>/posts/reading-note-1911/</guid>
+      <guid>https://chaosinism.github.io/posts/reading-note-1911/</guid>
       <description>&lt;p&gt;这个月没有干劲，正事和闲事都做得不怎么样，读书也不例外。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>在线小游戏</title>
-      <link>/posts/tiny-games/</link>
+      <link>https://chaosinism.github.io/posts/tiny-games/</link>
       <pubDate>Mon, 11 Nov 2019 02:27:16 -0500</pubDate>
       
-      <guid>/posts/tiny-games/</guid>
+      <guid>https://chaosinism.github.io/posts/tiny-games/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;本页面收录了我在各种场合制作的一些小游戏，或许可以用于取乐。其中多数游戏的代码与美术\音乐素材是开源的，欢迎分享与交流。&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -51,30 +68,30 @@
     
     <item>
       <title>读书笔记-2019.10</title>
-      <link>/posts/reading-note-1910/</link>
+      <link>https://chaosinism.github.io/posts/reading-note-1910/</link>
       <pubDate>Mon, 11 Nov 2019 02:23:30 -0500</pubDate>
       
-      <guid>/posts/reading-note-1910/</guid>
+      <guid>https://chaosinism.github.io/posts/reading-note-1910/</guid>
       <description>&lt;p&gt;本月的读书笔记，三个月以来语言文字能力并没有什么提升，已经有点不想干了，总之先试着坚持到年底吧。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AI生成《创人药》</title>
-      <link>/posts/ai-duren13/</link>
+      <link>https://chaosinism.github.io/posts/ai-duren13/</link>
       <pubDate>Sun, 03 Nov 2019 03:54:27 -0400</pubDate>
       
-      <guid>/posts/ai-duren13/</guid>
+      <guid>https://chaosinism.github.io/posts/ai-duren13/</guid>
       <description>&lt;p&gt;最近感觉我们的创主&lt;a href=&#34;https://www.weibo.com/u/6729213800&#34;&gt;独人13&lt;/a&gt;愈发整不出活了，于是打算用AI来代劳一下，就做了下面这个应用，利用机器学习来自动生成《创人药》。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;/rnn13&#34;&gt;点击这里使用&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://chaosinism.github.io/rnn13&#34;&gt;点击这里使用&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ludum Dare 45参赛体验&amp;作品</title>
-      <link>/posts/ld45/</link>
+      <link>https://chaosinism.github.io/posts/ld45/</link>
       <pubDate>Mon, 07 Oct 2019 19:02:00 -0400</pubDate>
       
-      <guid>/posts/ld45/</guid>
+      <guid>https://chaosinism.github.io/posts/ld45/</guid>
       <description>&lt;p&gt;Ludum Dare是一项游戏制作赛事，参赛者需要在48小时内独立完成一款游戏的制作，游戏用到的绝大多数素材也需要参赛者自制。每届赛事会指定参赛游戏的主题，本次比赛为第45届，主题是“Start with nothing”。&lt;/p&gt;
 
 &lt;p&gt;我参赛的原因是近期在考察开源游戏引擎&lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot Engine&lt;/a&gt;，虽然看了一些文档，但还没有实践过。Ludum Dare的举办时间经常和我其他的安排冲突，但这一次碰巧能抽出空来，因此是一次锻炼的好机会。&lt;/p&gt;</description>
@@ -82,28 +99,28 @@
     
     <item>
       <title>读书笔记-2019.09</title>
-      <link>/posts/reading-note-1909/</link>
+      <link>https://chaosinism.github.io/posts/reading-note-1909/</link>
       <pubDate>Mon, 07 Oct 2019 05:47:04 -0400</pubDate>
       
-      <guid>/posts/reading-note-1909/</guid>
-      <description>&lt;p&gt;本栏目的缘由已在&lt;a href=&#34;/posts/reading-note-1908&#34;&gt;上一期&lt;/a&gt;进行了说明，总之就是锻炼我自己的语言表达能力，对读者大概没有什么价值，可以看作《创人药》精神续作。那么本期的内容是我在9月的读书笔记。&lt;/p&gt;</description>
+      <guid>https://chaosinism.github.io/posts/reading-note-1909/</guid>
+      <description>&lt;p&gt;本栏目的缘由已在&lt;a href=&#34;https://chaosinism.github.io/posts/reading-note-1908&#34;&gt;上一期&lt;/a&gt;进行了说明，总之就是锻炼我自己的语言表达能力，对读者大概没有什么价值，可以看作《创人药》精神续作。那么本期的内容是我在9月的读书笔记。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>杖刀偶磨弓 - 模型配布/说明</title>
-      <link>/posts/mmd-mayumi/</link>
+      <link>https://chaosinism.github.io/posts/mmd-mayumi/</link>
       <pubDate>Tue, 01 Oct 2019 03:53:14 -0400</pubDate>
       
-      <guid>/posts/mmd-mayumi/</guid>
+      <guid>https://chaosinism.github.io/posts/mmd-mayumi/</guid>
       <description>&lt;p&gt;我以《东方Project》的新作角色“杖刀偶磨弓”为主角制作视频《┗|∵|┓磨弓的偶像宣言》（&lt;a href=&#34;https://www.bilibili.com/video/av68600342/&#34;&gt;Bilibili&lt;/a&gt;, &lt;a href=&#34;https://www.nicovideo.jp/watch/sm35721224&#34;&gt;Niconico&lt;/a&gt;），过程中也制作了该角色的3D模型，所以用MMD格式发布出来。可在&lt;a href=&#34;https://bowlroll.net/file/207898&#34;&gt;BowlRoll&lt;/a&gt;下载，另外也收录在了本博客的汇总页面。以下对模型内容、用到的制作和渲染方法等做一些介绍。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>读书笔记-2019.08</title>
-      <link>/posts/reading-note-1908/</link>
+      <link>https://chaosinism.github.io/posts/reading-note-1908/</link>
       <pubDate>Wed, 25 Sep 2019 18:54:56 -0400</pubDate>
       
-      <guid>/posts/reading-note-1908/</guid>
+      <guid>https://chaosinism.github.io/posts/reading-note-1908/</guid>
       <description>&lt;p&gt;我判断自己需要立刻开始提升语言表达能力，至少要达到正常人的平均水平，锻炼方式之一就是要经常写一些东西，所以我决定记录一些对于无关紧要的事物的感想。感想写出来，如果不发布或者只给熟人看，就难以真正获得提升；如果发表在公众平台，我就会被人骂死，最终结果就是我在个人博客开设了这样一个新栏目。&lt;/p&gt;
 
 &lt;p&gt;与其他栏目不同，我不能保证写下来的这些东西能为读者带来任何好处。如果您热爱收看“创人药”或“云杰说道”等节目，可以用同样的心态阅读下面的内容以消遣，否则可以跳过“个人感想”栏目内的所有文章。&lt;/p&gt;</description>
@@ -111,19 +128,19 @@
     
     <item>
       <title>搭建个人主页的心得</title>
-      <link>/posts/blog-setup/</link>
+      <link>https://chaosinism.github.io/posts/blog-setup/</link>
       <pubDate>Sat, 31 Aug 2019 07:38:27 -0400</pubDate>
       
-      <guid>/posts/blog-setup/</guid>
+      <guid>https://chaosinism.github.io/posts/blog-setup/</guid>
       <description>&lt;p&gt;这个博客差不多成型了，于是总结一下搭建个人主页的过程中使用的工具以及使用体验等等。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>利用语音识别技术辅助制作音源的初步尝试</title>
-      <link>/posts/voice-extraction/</link>
+      <link>https://chaosinism.github.io/posts/voice-extraction/</link>
       <pubDate>Sat, 31 Aug 2019 06:52:47 -0400</pubDate>
       
-      <guid>/posts/voice-extraction/</guid>
+      <guid>https://chaosinism.github.io/posts/voice-extraction/</guid>
       <description>&lt;p&gt;若想由一段音频素材（如一首歌或一段对话）制作出供人力Vocaloid使用的音源，第一步是要在素材中把可以用的发音逐个截取出来，此过程通常较为枯燥费力。因此，本文尝试探索一种结合AI语音识别技术加速该过程的方法。下面介绍一下步骤与工具。&lt;/p&gt;
 
 &lt;p&gt;需注意，本文原始发布时间较早，仅对此问题进行了初步的探索，并未得到一个成熟的解决方案，效果远非理想。另外，目前没有很方便的图形界面来实现文中所述功能，因此建议在对命令行与Python有一定使用经验的前提下阅读。&lt;/p&gt;
@@ -133,10 +150,10 @@
     
     <item>
       <title>Kinect v2与MMD动作捕捉</title>
-      <link>/posts/kinect-mmd/</link>
+      <link>https://chaosinism.github.io/posts/kinect-mmd/</link>
       <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
       
-      <guid>/posts/kinect-mmd/</guid>
+      <guid>https://chaosinism.github.io/posts/kinect-mmd/</guid>
       <description>&lt;p&gt;本文探讨MMD与Kinect v2设备不兼容的问题。文章以总结整理网络上的资料与开源项目为主，结合少量的原创工作，最终提出一种解决方案。由于我对这一领域只有初步的了解，若发现文章中有不准确或失去时效性的内容，欢迎批评指正。&lt;/p&gt;
 
 &lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv1750314&#34;&gt;https://www.bilibili.com/read/cv1750314&lt;/a&gt; ）&lt;/p&gt;</description>
@@ -144,10 +161,10 @@
     
     <item>
       <title>MIDI五线谱可视化——自制Vegas脚本</title>
-      <link>/posts/script-score/</link>
+      <link>https://chaosinism.github.io/posts/script-score/</link>
       <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
       
-      <guid>/posts/script-score/</guid>
+      <guid>https://chaosinism.github.io/posts/script-score/</guid>
       <description>&lt;p&gt;自制的Vegas脚本，用于MIDI可视化。&lt;/p&gt;
 
 &lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv1027442&#34;&gt;https://www.bilibili.com/read/cv1027442&lt;/a&gt; ）&lt;/p&gt;</description>
@@ -155,10 +172,10 @@
     
     <item>
       <title>音MAD助手——自制Vegas脚本</title>
-      <link>/posts/script-otomad/</link>
+      <link>https://chaosinism.github.io/posts/script-otomad/</link>
       <pubDate>Fri, 09 Aug 2019 03:57:14 -0400</pubDate>
       
-      <guid>/posts/script-otomad/</guid>
+      <guid>https://chaosinism.github.io/posts/script-otomad/</guid>
       <description>&lt;p&gt;自制的用于辅助鬼畜/音MAD制作的Vegas脚本，在此做一下介绍。&lt;/p&gt;
 
 &lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv392013&#34;&gt;https://www.bilibili.com/read/cv392013&lt;/a&gt; ）&lt;/p&gt;</description>
@@ -166,10 +183,10 @@
     
     <item>
       <title>自制资源汇总</title>
-      <link>/posts/homemade/</link>
+      <link>https://chaosinism.github.io/posts/homemade/</link>
       <pubDate>Mon, 05 Aug 2019 10:09:12 -0400</pubDate>
       
-      <guid>/posts/homemade/</guid>
+      <guid>https://chaosinism.github.io/posts/homemade/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;本页面列举笔者自制资源，包含MMD模型、软件脚本、工程文件等。&lt;/li&gt;
 &lt;li&gt;依据资源性质，资源的使用与传播须遵循不同的协议，详情请参照每一项资源链接中的说明。&lt;/li&gt;
@@ -178,10 +195,10 @@
     
     <item>
       <title>资源网站汇总</title>
-      <link>/posts/website-list/</link>
+      <link>https://chaosinism.github.io/posts/website-list/</link>
       <pubDate>Mon, 05 Aug 2019 09:51:55 -0400</pubDate>
       
-      <guid>/posts/website-list/</guid>
+      <guid>https://chaosinism.github.io/posts/website-list/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;本页面搜集整理网络上可用于多媒体制作的免费资源，自身并不提供资源的下载。&lt;/li&gt;
 &lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
@@ -192,24 +209,15 @@
     
     <item>
       <title>软件与工具汇总</title>
-      <link>/posts/tool-list/</link>
+      <link>https://chaosinism.github.io/posts/tool-list/</link>
       <pubDate>Mon, 05 Aug 2019 09:51:49 -0400</pubDate>
       
-      <guid>/posts/tool-list/</guid>
+      <guid>https://chaosinism.github.io/posts/tool-list/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;本页面列举笔者体验过的开源或免费软件、工具，主要侧重于多媒体制作（包含绘图、3D、视频、音乐等）相关的功能。&lt;/li&gt;
 &lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
 &lt;li&gt;表格中部分软件存在收费版本，但与免费版本的区别仅在于功能强弱，在使用时限、导入导出等关键要素上不存在限制。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>关于我</title>
-      <link>/posts/about-me/</link>
-      <pubDate>Mon, 05 Aug 2019 09:09:20 -0400</pubDate>
-      
-      <guid>/posts/about-me/</guid>
-      <description></description>
     </item>
     
   </channel>
