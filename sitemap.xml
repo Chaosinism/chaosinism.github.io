@@ -3,20 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chaosinism.github.io/posts/comment-analyzer/</loc>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chaosinism.github.io/categories/</loc>
-    <lastmod>2020-02-13T12:00:00-05:00</lastmod>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/godot/</loc>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chaosinism.github.io/posts/</loc>
-    <lastmod>2020-02-13T12:00:00-05:00</lastmod>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/</loc>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chaosinism.github.io/</loc>
-    <lastmod>2020-02-13T12:00:00-05:00</lastmod>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-02-16T07:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,19 +72,7 @@
   </url>
   
   <url>
-    <loc>https://chaosinism.github.io/tags/godot/</loc>
-    <lastmod>2020-01-20T16:35:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chaosinism.github.io/tags/lmms/</loc>
-    <lastmod>2020-01-20T16:35:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/tags/</loc>
     <lastmod>2020-01-20T16:35:00-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -144,12 +157,6 @@
   
   <url>
     <loc>https://chaosinism.github.io/tags/%E7%8B%AC%E4%BA%BA13/</loc>
-    <lastmod>2019-11-03T03:54:27-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2019-11-03T03:54:27-04:00</lastmod>
     <priority>0</priority>
   </url>

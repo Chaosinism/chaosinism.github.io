@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/</link>
     <description>Recent content on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 Feb 2020 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 07:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bilibili评论统计工具</title>
+      <link>https://chaosinism.github.io/posts/comment-analyzer/</link>
+      <pubDate>Sun, 16 Feb 2020 07:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/comment-analyzer/</guid>
+      <description>&lt;p&gt;自制了一个工具用来统计B站视频评论区数据。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>网站主题更新</title>
@@ -204,19 +213,6 @@
 &lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
 &lt;li&gt;被列举的网站除免费资源外，可能也提供收费资源。此外，资源的使用遵循不同种类的协议，需要使用者自行鉴别。&lt;/li&gt;
 &lt;li&gt;本页面将不定期更新，移除失效链接。部分网站可能有访问区域限制，笔者没有精力逐一验证并注明，还请见谅。&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>软件与工具汇总</title>
-      <link>https://chaosinism.github.io/posts/tool-list/</link>
-      <pubDate>Mon, 05 Aug 2019 09:51:49 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/tool-list/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;本页面列举笔者体验过的开源或免费软件、工具，主要侧重于多媒体制作（包含绘图、3D、视频、音乐等）相关的功能。&lt;/li&gt;
-&lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
-&lt;li&gt;表格中部分软件存在收费版本，但与免费版本的区别仅在于功能强弱，在使用时限、导入导出等关键要素上不存在限制。&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
