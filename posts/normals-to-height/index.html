@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        临时个人主页</title>
+        由法线贴图生成高度图的算法 - 临时个人主页
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,28 +23,36 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。
+" />
   <meta name="generator" content="Hugo 0.56.0 with theme pure" />
-  <title>临时个人主页</title>
+  <title>由法线贴图生成高度图的算法 - 临时个人主页</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://chaosinism.github.io/tags/c-sharp/index.xml" title="临时个人主页" />
   
   <link rel="stylesheet" href="https://chaosinism.github.io/css/style.min.96344896368df9cb930b382c93ca5a7234d7118b7754e394f15c1e929cc37e10.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="C Sharp" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://chaosinism.github.io/tags/c-sharp/" />
+  <meta property="og:title" content="由法线贴图生成高度图的算法" />
+<meta property="og:description" content="自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chaosinism.github.io/posts/normals-to-height/" />
+<meta property="article:published_time" content="2020-03-02T17:00:00-04:00" />
+<meta property="article:modified_time" content="2020-03-02T17:00:00-04:00" />
+<meta itemprop="name" content="由法线贴图生成高度图的算法">
+<meta itemprop="description" content="自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。">
 
-<meta property="og:updated_time" content="2019-08-09T03:57:34-04:00" />
-<meta itemprop="name" content="C Sharp">
-<meta itemprop="description" content="">
 
+<meta itemprop="datePublished" content="2020-03-02T17:00:00-04:00" />
+<meta itemprop="dateModified" content="2020-03-02T17:00:00-04:00" />
+<meta itemprop="wordCount" content="1304">
+
+
+
+<meta itemprop="keywords" content="Python," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="C Sharp"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="由法线贴图生成高度图的算法"/>
+<meta name="twitter:description" content="自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -338,78 +347,200 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">C Sharp</h1>
-            <p class="text-muted hidden-xs">共 21 个标签</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://chaosinism.github.io/tags">All</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/blender/">Blender</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/c-sharp/">C Sharp</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/godot/">Godot</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/javascript/">JavaScript</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/kinect/">Kinect</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/lmms/">LMMS</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/midi/">MIDI</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/mmd/">MMD</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/python/">Python</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/utau/">UTAU</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/vegas/">Vegas</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/vroid/">VRoid</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E4%B8%9C%E6%96%B9project/">东方Project</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E7%8B%AC%E4%BA%BA13/">独人13</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/">独立游戏</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/">资源汇总</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E8%BD%AF%E4%BB%B6%E8%84%9A%E6%9C%AC/">软件脚本</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E9%9F%B3mad/">音MAD</a></li>
-                    <li><a href="https://chaosinism.github.io/tags/%E9%A9%B1%E5%8A%A8/">驱动</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/normals-to-height/"
+    >由法线贴图生成高度图的算法</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2019-08-09 03:57:34 -0400 EDT"
-                itemprop="datePublished">2019-08-09</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chaosinism.github.io/posts/normals-to-height/" class="article-date">
+  <time datetime="2020-03-02 17:00:00 -0400 -0400" itemprop="datePublished">2020-03-02</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/"> 自制工具 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/python/"> Python </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/normals-to-height/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1304字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。</p>
+
+<p><center><figure>
+    <img src="medusa.jpg"
+         alt="法线/置换贴图与使用后的效果（线稿来自《碧蓝幻想》美术设定集）" width="800px"/> <figcaption>
+            <p>法线/置换贴图与使用后的效果（线稿来自《碧蓝幻想》美术设定集）</p>
+        </figcaption>
+</figure>
+</center></p>
+
+<h2 id="法线贴图">法线贴图</h2>
+
+<p>法线贴图(Normal Map)利用贴图每个像素的RGB值储存该点的三维法线矢量，然后拿它来计算贴图表面的光线反射，这样低多边形的3D模型也能体现出光照细节。人们经常用它来改善游戏中的3D材质。</p>
+
+<p>不过我更关心的是另一种应用——对于一张绘画线稿，如果也能得到一张法线贴图，就能自动计算其光影，从而省去很多手动上色的步骤。<a href="https://v-sense.scss.tcd.ie/">V-Sense</a>研究小组曾在下面的论文中提出利用深度学习生成法线贴图的方法：</p>
+
+<blockquote>
+<p>Hudon, Matis, Mairéad Grogan, and Aljosa Smolic. &ldquo;Deep normal estimation for automatic shading of hand-drawn characters.&rdquo; <em>Proceedings of the European Conference on Computer Vision (ECCV)</em>. 2018.</p>
+</blockquote>
+
+<p>论文的成果就是开源项目<a href="https://github.com/V-Sense/DeepNormals">DeepNormals</a>，虽然它看起来不太受学术界关注，但我个人的使用体验倒是很不错，强过不少更热门的自动上色方案。</p>
+
+<h2 id="高度图-置换贴图">高度图/置换贴图</h2>
+
+<p>最近，DeepNormals的作者发表了一篇后续文章，提出在生成法线贴图后可以进一步将其转化为高度图：</p>
+
+<blockquote>
+<p>Hudon, Matis, et al. &ldquo;Augmenting Hand-Drawn Art with Global Illumination Effects through Surface Inflation.&rdquo; <em>European Conference on Visual Media Production</em>. 2019.</p>
+</blockquote>
+
+<p>高度图可以作为置换贴图(Displacement Map)，贴图的每个点会沿法线进行位移，从而造成真实的三维凹凸效果。这种方法能做到一些法线贴图无法做到的事：</p>
+
+<ul>
+<li>法线贴图没有自阴影，而置换法支持；</li>
+<li>可以用图形学模拟距离感相关的技法，如镜头虚化和色彩远近法；</li>
+<li>置换后可以在立体空间小幅旋转图片而不产生违和感，甚至可以由此将2D图片转为3D模型。</li>
+</ul>
+
+<p>当然它也有缺点，比如运算慢，但是如果我们考虑将其应用于绘画/动画而非实时渲染，这一点就不是特别重要了，因此我还是很愿意学习这个方法的。</p>
+
+<h2 id="算法">算法</h2>
+
+<p>对于如何生成这样的高度图，论文中给出的算法其实很简单粗暴。假设$(u,v)$为贴图坐标，相应的高度为$Z(u,v)$（也就是待求量），那么沿$u$方向可以计算出切线向量</p>
+
+<p>$\mathbf{t}_{uv}^{\parallel}=[1,0,\frac{dZ(u,v)}{du}]$，用离散形式表示其实就是</p>
+
+<p>$\mathbf{t}_{uv}^{\parallel}=[1,0,Z(u+1,v)-Z(u,v)]$；同理，沿$u$方向可以计算出另一个切线向量</p>
+
+<p>$\mathbf{t}_{uv}^{\perp}=[0,1,Z(u,v+1)-Z(u,v)]$。</p>
+
+<p>我们已经知道了贴图每个点的法线向量$\mathbf{n}_{uv}$，它应当与两个切线都垂直，即点乘得0。于是定义一个“能量”函数：</p>
+
+<p>$E=\sum_{u,v} (\mathbf{t}^{\parallel}\cdot\mathbf{n})^2+(\mathbf{t}^{\perp}\cdot\mathbf{n})^2$</p>
+
+<p>函数的值越小就说明高度图越准确。它对$Z(u,v)$的偏导只含一次项，用梯度下降之类的方法很容易进行优化。</p>
+
+<h2 id="自制脚本">自制脚本</h2>
+
+<p>根据论文的说法，这个算法早就有了，奇怪的是我以前也考察过一些能转换法线和高度图的工具，比如<a href="https://github.com/kmkolasinski/AwesomeBump">AwesomeBump</a>或<a href="https://code.google.com/archive/p/gimp-normalmap/">GIMP法线贴图插件</a>，它们都没有使用这种方法，而是只沿一个方向由法线累计高度，误差要大很多，不太清楚其中的缘由。</p>
+
+<p>这一篇新论文自身也并没有附带开源代码，所幸算法简单，于是我用Scipy的优化器自己实现了一下，放在下面这个仓库。以后再有计算法线相关的内容可能也会在这里更新：</p>
+
+<p><a href="https://github.com/Chaosinism/NormalMapTool">https://github.com/Chaosinism/NormalMapTool</a></p>
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://chaosinism.github.io/posts/normals-to-height/" title="由法线贴图生成高度图的算法" target="_blank" rel="external">https://chaosinism.github.io/posts/normals-to-height/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://chaosinism.github.io/" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://chaosinism.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://chaosinism.github.io/" target="_blank"><span class="text-dark">Chaosinism</span><small class="ml-1x"></small></a></h3>
+        <div></div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>  <h2>评论</h2>
+  
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <p>目前尚未有留言。</p>
+  
+
+
+
+
+<form method="POST" action="https://staticman3.herokuapp.com/v2/entry/Chaosinism/chaosinism.github.io/master/comments">
+    <input type="hidden" name="options[redirect]" value="https://chaosinism.github.io">
+    <input type="hidden" name="options[slug]" value="normals-to-height">
+    <input type="hidden" name="options[parent]" value="normals-to-height">
+    <input name="fields[name]" type="text" placeholder="昵称（必填）">
+    <br>
+    <input name="fields[email]" type="email" placeholder="邮箱（选填）">
+    <br>
+    <textarea name="fields[message]" placeholder="请输入留言内容（支持Markdown语法）。留言经博主审核后显示在网页上，此外可在本站Github仓库检查已提交的留言。" rows="10" cols="80"></textarea>
+    <input type="submit" value="提交">
+  </form>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://chaosinism.github.io/posts/voice-extraction-2/" title="AI辅助制作音源的补充说明"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://chaosinism.github.io/posts/script-score/">MIDI五线谱可视化——自制Vegas脚本</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://chaosinism.github.io/tags/vegas" class="label label-default mb">Vegas</a>
-        <a href="https://chaosinism.github.io/tags/c-sharp" class="label label-default mb">C Sharp</a>
-        <a href="https://chaosinism.github.io/tags/%E8%BD%AF%E4%BB%B6%E8%84%9A%E6%9C%AC" class="label label-default mb">软件脚本</a>
-        <span class="label label-default mb">···</span>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2019-08-09 03:57:14 -0400 EDT"
-                itemprop="datePublished">2019-08-09</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://chaosinism.github.io/posts/script-otomad/">音MAD助手——自制Vegas脚本</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://chaosinism.github.io/tags/vegas" class="label label-default mb">Vegas</a>
-        <a href="https://chaosinism.github.io/tags/%E9%9F%B3mad" class="label label-default mb">音MAD</a>
-        <a href="https://chaosinism.github.io/tags/c-sharp" class="label label-default mb">C Sharp</a>
-        <span class="label label-default mb">···</span>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/chaosinism" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -484,6 +615,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
 <script type="application/javascript">
 var doNotTrack = false;
