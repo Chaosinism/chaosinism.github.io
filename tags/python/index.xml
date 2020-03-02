@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/tags/python/</link>
     <description>Recent content in Python on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Feb 2020 08:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 17:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>由法线贴图生成高度图的算法</title>
+      <link>https://chaosinism.github.io/posts/normals-to-height/</link>
+      <pubDate>Mon, 02 Mar 2020 17:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/normals-to-height/</guid>
+      <description>&lt;p&gt;自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>AI辅助制作音源的补充说明</title>
@@ -38,39 +47,12 @@
     </item>
     
     <item>
-      <title>读书笔记-2020.01</title>
-      <link>https://chaosinism.github.io/posts/reading-note-2001/</link>
-      <pubDate>Thu, 13 Feb 2020 11:21:00 -0500</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-2001/</guid>
-      <description>&lt;p&gt;无言投下。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Touhou Fan Game Jam 5 参赛体验</title>
       <link>https://chaosinism.github.io/posts/thjam5/</link>
       <pubDate>Mon, 20 Jan 2020 16:35:00 -0400</pubDate>
       
       <guid>https://chaosinism.github.io/posts/thjam5/</guid>
       <description>&lt;p&gt;第五届“Touhou Fan Game Jam”72小时制作赛的参赛体验和作品。实际上由于活动不到周末就开始了，只有两天可以用来进行制作，到最后各方面完成度都较为有限。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>读书笔记-2019.12</title>
-      <link>https://chaosinism.github.io/posts/reading-note-1912/</link>
-      <pubDate>Wed, 08 Jan 2020 01:27:00 -0500</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-1912/</guid>
-      <description>&lt;p&gt;整一个月都忙得要死，结果除了写这篇废话之外什么东西都没有制作，不知什么时候才能抽出时间继续整活。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>读书笔记-2019.11</title>
-      <link>https://chaosinism.github.io/posts/reading-note-1911/</link>
-      <pubDate>Thu, 12 Dec 2019 20:59:00 -0500</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-1911/</guid>
-      <description>&lt;p&gt;这个月没有干劲，正事和闲事都做得不怎么样，读书也不例外。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,15 +64,6 @@
       <description>&lt;ul&gt;
 &lt;li&gt;本页面收录了我在各种场合制作的一些小游戏，或许可以用于取乐。其中多数游戏的代码与美术\音乐素材是开源的，欢迎分享与交流。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>读书笔记-2019.10</title>
-      <link>https://chaosinism.github.io/posts/reading-note-1910/</link>
-      <pubDate>Mon, 11 Nov 2019 02:23:30 -0500</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-1910/</guid>
-      <description>&lt;p&gt;本月的读书笔记，三个月以来语言文字能力并没有什么提升，已经有点不想干了，总之先试着坚持到年底吧。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -116,32 +89,12 @@
     </item>
     
     <item>
-      <title>读书笔记-2019.09</title>
-      <link>https://chaosinism.github.io/posts/reading-note-1909/</link>
-      <pubDate>Mon, 07 Oct 2019 05:47:04 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-1909/</guid>
-      <description>&lt;p&gt;本栏目的缘由已在&lt;a href=&#34;https://chaosinism.github.io/posts/reading-note-1908&#34;&gt;上一期&lt;/a&gt;进行了说明，总之就是锻炼我自己的语言表达能力，对读者大概没有什么价值，可以看作《创人药》精神续作。那么本期的内容是我在9月的读书笔记。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>杖刀偶磨弓 - 模型配布/说明</title>
       <link>https://chaosinism.github.io/posts/mmd-mayumi/</link>
       <pubDate>Tue, 01 Oct 2019 03:53:14 -0400</pubDate>
       
       <guid>https://chaosinism.github.io/posts/mmd-mayumi/</guid>
       <description>&lt;p&gt;我以《东方Project》的新作角色“杖刀偶磨弓”为主角制作视频《┗|∵|┓磨弓的偶像宣言》（&lt;a href=&#34;https://www.bilibili.com/video/av68600342/&#34;&gt;Bilibili&lt;/a&gt;, &lt;a href=&#34;https://www.nicovideo.jp/watch/sm35721224&#34;&gt;Niconico&lt;/a&gt;），过程中也制作了该角色的3D模型，所以用MMD格式发布出来。可在&lt;a href=&#34;https://bowlroll.net/file/207898&#34;&gt;BowlRoll&lt;/a&gt;下载，另外也收录在了本博客的汇总页面。以下对模型内容、用到的制作和渲染方法等做一些介绍。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>读书笔记-2019.08</title>
-      <link>https://chaosinism.github.io/posts/reading-note-1908/</link>
-      <pubDate>Wed, 25 Sep 2019 18:54:56 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/reading-note-1908/</guid>
-      <description>&lt;p&gt;我判断自己需要立刻开始提升语言表达能力，至少要达到正常人的平均水平，锻炼方式之一就是要经常写一些东西，所以我决定记录一些对于无关紧要的事物的感想。感想写出来，如果不发布或者只给熟人看，就难以真正获得提升；如果发表在公众平台，我就会被人骂死，最终结果就是我在个人博客开设了这样一个新栏目。&lt;/p&gt;
-
-&lt;p&gt;与其他栏目不同，我不能保证写下来的这些东西能为读者带来任何好处。如果您热爱收看“创人药”或“云杰说道”等节目，可以用同样的心态阅读下面的内容以消遣，否则可以跳过“个人感想”栏目内的所有文章。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -209,6 +162,42 @@
 &lt;li&gt;本页面列举笔者自制资源，包含MMD模型、软件脚本、工程文件等。&lt;/li&gt;
 &lt;li&gt;依据资源性质，资源的使用与传播须遵循不同的协议，详情请参照每一项资源链接中的说明。&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>资源网站汇总</title>
+      <link>https://chaosinism.github.io/posts/website-list/</link>
+      <pubDate>Mon, 05 Aug 2019 09:51:55 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/website-list/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面搜集整理网络上可用于多媒体制作的免费资源，自身并不提供资源的下载。&lt;/li&gt;
+&lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
+&lt;li&gt;被列举的网站除免费资源外，可能也提供收费资源。此外，资源的使用遵循不同种类的协议，需要使用者自行鉴别。&lt;/li&gt;
+&lt;li&gt;本页面将不定期更新，移除失效链接。部分网站可能有访问区域限制，笔者没有精力逐一验证并注明，还请见谅。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>软件与工具汇总</title>
+      <link>https://chaosinism.github.io/posts/tool-list/</link>
+      <pubDate>Mon, 05 Aug 2019 09:51:49 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/tool-list/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面列举笔者体验过的开源或免费软件、工具，主要侧重于多媒体制作（包含绘图、3D、视频、音乐等）相关的功能。&lt;/li&gt;
+&lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
+&lt;li&gt;表格中部分软件存在收费版本，但与免费版本的区别仅在于功能强弱，在使用时限、导入导出等关键要素上不存在限制。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://chaosinism.github.io/posts/about-me/</link>
+      <pubDate>Mon, 05 Aug 2019 09:09:20 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/about-me/</guid>
+      <description></description>
     </item>
     
   </channel>
