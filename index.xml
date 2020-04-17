@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/</link>
     <description>Recent content on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 Mar 2020 17:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 23:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>音乐编程工具考察</title>
+      <link>https://chaosinism.github.io/posts/music-programming-tools/</link>
+      <pubDate>Thu, 16 Apr 2020 23:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/music-programming-tools/</guid>
+      <description>&lt;p&gt;作为没有艺术细胞又偶尔想搞创作的人，我希望能用程式化的方式处理各种媒体。对于图像或视频，现在的主流创作工具都提供了脚本编程的功能，也有各种经典或前沿的研究成果被做成开源的库以便直接取用。但这种做法到了音乐好像行不通了——音乐看起来能用很数学的方式来描述，但恐怕这只是一种错觉。从科学史中可以看到大量数学家与物理学家试图破解音乐的奥秘，然而至今不论是处理、分析还是创作音乐的技术和理论都远未成熟，更不用提实际应用到生产环境。因此在进行某些无谓的尝试之前，我需要对现有的工具先调查一番，不然甚至不知道该从哪里开始。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>由法线贴图生成高度图的算法</title>
