@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/</link>
     <description>Recent content on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Apr 2020 23:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 08:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bilibili评论统计工具-油猴脚本</title>
+      <link>https://chaosinism.github.io/posts/comment-analyzer-js/</link>
+      <pubDate>Fri, 05 Jun 2020 08:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/comment-analyzer-js/</guid>
+      <description>&lt;p&gt;之前自制了&lt;a href=&#34;https://chaosinism.github.io/posts/comment-analyzer&#34;&gt;工具&lt;/a&gt;用来统计B站视频评论区数据，需要输入AV号，现在B站改为BV号后就很不方便了，因此本次将它改为油猴脚本，就可以直接在视频页面上运行，不需要另开一个程序。此外还新增了一些功能。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>音乐编程工具考察</title>
