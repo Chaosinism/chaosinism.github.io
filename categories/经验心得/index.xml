@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/</link>
     <description>Recent content in 经验心得 on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 16 Apr 2020 23:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 12:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 9 Card Game Print and Play Design Contest 参赛体验</title>
+      <link>https://chaosinism.github.io/posts/9card-2020/</link>
+      <pubDate>Sun, 21 Jun 2020 12:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/9card-2020/</guid>
+      <description>&lt;p&gt;之前参加了几个限时两天或三天的Game Jam，但过短的时间限制似乎并不利于锻炼技能，这次就走另一个极端，参加了极简风格的卡牌游戏制作比赛，目的是制作仅用9张卡牌和少数配件就能玩的游戏。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Bilibili评论统计工具-油猴脚本</title>
@@ -207,15 +216,6 @@
 &lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
 &lt;li&gt;表格中部分软件存在收费版本，但与免费版本的区别仅在于功能强弱，在使用时限、导入导出等关键要素上不存在限制。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>关于我</title>
-      <link>https://chaosinism.github.io/posts/about-me/</link>
-      <pubDate>Mon, 05 Aug 2019 09:09:20 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/about-me/</guid>
-      <description></description>
     </item>
     
   </channel>

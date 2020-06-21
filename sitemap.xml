@@ -3,16 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chaosinism.github.io/posts/comment-analyzer-js/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
+    <loc>https://chaosinism.github.io/posts/9card-2020/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://chaosinism.github.io/categories/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/posts/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/%E6%A1%8C%E6%B8%B8/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/posts/comment-analyzer-js/</loc>
+    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -23,24 +66,6 @@
   
   <url>
     <loc>https://chaosinism.github.io/tags/javascript/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/posts/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/tags/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/</loc>
     <lastmod>2020-06-05T08:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -59,12 +84,6 @@
   
   <url>
     <loc>https://chaosinism.github.io/tags/vst/</loc>
-    <lastmod>2020-04-16T23:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2020-04-16T23:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -155,12 +174,6 @@
   
   <url>
     <loc>https://chaosinism.github.io/tags/%E4%B8%9C%E6%96%B9project/</loc>
-    <lastmod>2020-01-20T16:35:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/tags/%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2020-01-20T16:35:00-04:00</lastmod>
     <priority>0</priority>
   </url>
