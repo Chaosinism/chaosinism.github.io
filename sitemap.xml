@@ -3,34 +3,65 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chaosinism.github.io/posts/9card-2020/</loc>
-    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://chaosinism.github.io/categories/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chaosinism.github.io/categories/</loc>
-    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <loc>https://chaosinism.github.io/tags/midi/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chaosinism.github.io/posts/</loc>
-    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://chaosinism.github.io/tags/puredata/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/posts/puredata-sampler/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chaosinism.github.io/tags/</loc>
-    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/tags/vst/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chaosinism.github.io/</loc>
-    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-07-14T23:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/posts/9card-2020/</loc>
+    <lastmod>2020-06-21T12:00:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -67,24 +98,6 @@
   <url>
     <loc>https://chaosinism.github.io/tags/javascript/</loc>
     <lastmod>2020-06-05T08:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-06-05T08:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/tags/midi/</loc>
-    <lastmod>2020-04-16T23:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/tags/vst/</loc>
-    <lastmod>2020-04-16T23:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   

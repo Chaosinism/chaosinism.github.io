@@ -37,7 +37,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://chaosinism.github.io/" />
 
-<meta property="og:updated_time" content="2020-06-21T12:00:00-04:00" />
+<meta property="og:updated_time" content="2020-07-14T23:00:00-04:00" />
 <meta itemprop="name" content="临时个人主页">
 <meta itemprop="description" content="">
 
@@ -177,7 +177,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/" class="category-list-link">经验心得</a><span class="category-list-count">10</span></li>
-            <li class="category-list-item"><a href="https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/" class="category-list-link">自制工具</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://chaosinism.github.io/categories/%E8%87%AA%E5%88%B6%E5%B7%A5%E5%85%B7/" class="category-list-link">自制工具</a><span class="category-list-count">7</span></li>
             <li class="category-list-item"><a href="https://chaosinism.github.io/categories/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/" class="category-list-link">长期更新</a><span class="category-list-count">4</span></li>
         </ul>
     </div>
@@ -221,11 +221,15 @@
             
             
             <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/midi/" class="tag-list-link">midi</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/mmd/" class="tag-list-link">mmd</a><span
                     class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/puredata/" class="tag-list-link">puredata</a><span
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/python/" class="tag-list-link">python</a><span
@@ -245,7 +249,7 @@
             
             
             <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/vst/" class="tag-list-link">vst</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://chaosinism.github.io/tags/%E4%B8%9C%E6%96%B9project/" class="tag-list-link">东方project</a><span
@@ -295,6 +299,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://chaosinism.github.io/posts/puredata-sampler/" class="title">Slow Sampler - 自制VST采样器</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-07-14 23:00:00 -0400 EDT" itemprop="datePublished">2020-07-14</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://chaosinism.github.io/posts/9card-2020/" class="title">2020 9 Card Game Print and Play Design Contest 参赛体验</a>
                     </p>
                     <p class="item-date">
@@ -332,16 +346,6 @@
                     </p>
                 </div>
             </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://chaosinism.github.io/posts/voice-extraction-2/" class="title">AI辅助制作音源的补充说明</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-19 08:00:00 -0500 EST" itemprop="datePublished">2020-02-19</time>
-                    </p>
-                </div>
-            </li>
         </ul>
     </div>
 </div>
@@ -357,6 +361,49 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/voice-extraction/"
+    >利用语音识别技术辅助制作音源的初步尝试</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description"><p>若想由一段音频素材（如一首歌或一段对话）制作出供人力Vocaloid使用的音源，第一步是要在素材中把可以用的发音逐个截取出来，此过程通常较为枯燥费力。因此，本文尝试探索一种结合AI语音识别技术加速该过程的方法。下面介绍一下步骤与工具。</p>
+
+<p>需注意，本文原始发布时间较早，仅对此问题进行了初步的探索，并未得到一个成熟的解决方案，效果远非理想。另外，目前没有很方便的图形界面来实现文中所述功能，因此建议在对命令行与Python有一定使用经验的前提下阅读。</p>
+
+<p>（原始投稿地址：<a href="https://www.bilibili.com/read/cv465184">https://www.bilibili.com/read/cv465184</a> ）</p></div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://chaosinism.github.io/posts/voice-extraction/" class="">
+  <time datetime="2019-08-31 06:52:47 -0400 EDT" itemprop="datePublished">2019-08-31</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/"> 经验心得 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/utau/"> UTAU </a>
+    <a class="article-tag-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+    <a class="article-tag-link" href="/tags/python/"> Python </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/voice-extraction/#comments" class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1729字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -520,7 +567,7 @@
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/homemade/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 603字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 618字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </p>
     </article>
@@ -606,35 +653,6 @@
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1914字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/about-me/"
-    >关于我</a
-  >
-</h1>
-
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://chaosinism.github.io/posts/about-me/" class="">
-  <time datetime="2019-08-05 09:09:20 -0400 EDT" itemprop="datePublished">2019-08-05</time>
-</a>
-</span>
-
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/about-me/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 241字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -644,10 +662,15 @@
           <i class="icon icon-angle-left"></i>
           
         </a>
+      </li><li class="next">
+        <a href="/page/4/">
+          <i class="icon icon-angle-right"></i>
+          
+        </a>
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:3/3
+      Page:3/4
     </div>
   </div>
 </nav>

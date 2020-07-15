@@ -5,7 +5,7 @@
     <link>https://chaosinism.github.io/tags/puredata/</link>
     <description>Recent content in PureData on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 14 Jul 2020 18:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 23:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/tags/puredata/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>Slow Sampler - 自制VST采样器</title>
       <link>https://chaosinism.github.io/posts/puredata-sampler/</link>
-      <pubDate>Tue, 14 Jul 2020 18:00:00 -0400</pubDate>
+      <pubDate>Tue, 14 Jul 2020 23:00:00 -0400</pubDate>
       
       <guid>https://chaosinism.github.io/posts/puredata-sampler/</guid>
       <description>&lt;p&gt;试着自制一个VST采样器，专注于时间伸缩（Time Stretch）方面的功能，可用于音MAD等的制作。&lt;/p&gt;</description>

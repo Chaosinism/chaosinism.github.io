@@ -37,15 +37,15 @@
 <meta property="og:description" content="试着自制一个VST采样器，专注于时间伸缩（Time Stretch）方面的功能，可用于音MAD等的制作。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chaosinism.github.io/posts/puredata-sampler/" />
-<meta property="article:published_time" content="2020-07-14T18:00:00-04:00" />
-<meta property="article:modified_time" content="2020-07-14T18:00:00-04:00" />
+<meta property="article:published_time" content="2020-07-14T23:00:00-04:00" />
+<meta property="article:modified_time" content="2020-07-14T23:00:00-04:00" />
 <meta itemprop="name" content="Slow Sampler - 自制VST采样器">
 <meta itemprop="description" content="试着自制一个VST采样器，专注于时间伸缩（Time Stretch）方面的功能，可用于音MAD等的制作。">
 
 
-<meta itemprop="datePublished" content="2020-07-14T18:00:00-04:00" />
-<meta itemprop="dateModified" content="2020-07-14T18:00:00-04:00" />
-<meta itemprop="wordCount" content="108">
+<meta itemprop="datePublished" content="2020-07-14T23:00:00-04:00" />
+<meta itemprop="dateModified" content="2020-07-14T23:00:00-04:00" />
+<meta itemprop="wordCount" content="1360">
 
 
 
@@ -311,7 +311,7 @@
                         <a href="https://chaosinism.github.io/posts/puredata-sampler/" class="title">Slow Sampler - 自制VST采样器</a>
                     </p>
                     <p class="item-date">
-                        <time datetime="2020-07-14 18:00:00 -0400 EDT" itemprop="datePublished">2020-07-14</time>
+                        <time datetime="2020-07-14 23:00:00 -0400 EDT" itemprop="datePublished">2020-07-14</time>
                     </p>
                 </div>
             </li>
@@ -389,7 +389,7 @@
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
 <a href="https://chaosinism.github.io/posts/puredata-sampler/" class="article-date">
-  <time datetime="2020-07-14 18:00:00 -0400 EDT" itemprop="datePublished">2020-07-14</time>
+  <time datetime="2020-07-14 23:00:00 -0400 EDT" itemprop="datePublished">2020-07-14</time>
 </a>
 </span>
 <span class="article-category">
@@ -405,14 +405,48 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/puredata-sampler/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 108字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1360字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <p>试着自制一个VST采样器，专注于时间伸缩（Time Stretch）方面的功能，可用于音MAD等的制作。</p>
 
-<p>虽然之前<a href="/posts/music-programming-tools">总结了一些音乐编程的工具</a>，这次真的开始做音频方面的开发了，却一个都没有用到。这是因为找到了更顺手的工具——</p>
+<p>虽然之前<a href="/posts/music-programming-tools">总结了一些音乐编程的工具</a>，这次真的开始做音频方面的开发了，却一个都没有用到。这是因为找到了更顺手的工具——<a href="https://puredata.info/">Pure Data</a>。它提供一系列逻辑与数字信号处理的模块，并使用节点图的方式让用户搭建所需的功能。另一个至关重要的工具则是<a href="https://github.com/pierreguillot/Camomile">Camomile</a>，它允许将Pure Data程序直接作为VST插件来运行，且不需要额外的编译，这满足了我在上一篇文章中讨论的大多数要求。</p>
+
+<p>本次尝试开发的工具是一个暂且命名为“Slow Sampler”的VSTi采样器插件，可以用于音MAD制作。音MAD音频部分的制作有两种流行的方式，一是使用Vegas等非线编软件，二是使用FL Studio等DAW。我之前虽然写过<a href="/posts/script-otomad">用于Vegas的音MAD脚本</a>，但实际上更倾向于用第二种方法，因为我经常重编或改编原曲，不用DAW就很难做到。要在DAW中发出素材的乐音，就需要使用采样器插件。</p>
+
+<p>然而，也有一些操作在Vegas中容易实现、而主流DAW的采样器却实现不了。以我个人感受而言，最明显的问题是很难在DAW中对素材进行灵活的时间伸缩（Time Stretching），因此我自制的这个采样器主要关注时间伸缩方面的功能。</p>
+
+<p><center><figure>
+    <img src="gui.jpg"
+         alt="Slow Sampler的界面" width="800px"/> <figcaption>
+            <p>Slow Sampler的界面</p>
+        </figcaption>
+</figure>
+</center></p>
+
+<p>DAW难以控制素材的时长，主要体现在两个方面。首先，在大多数采样器中，如果提高素材的音高，素材的长度会同时变短，不像Vegas有一个变调而不变速的功能。据我考察，FL Studio自带的采样器可以做到变调不变速，而Reaper自带的采样器好像就不行，另外免费的VST采样器大多数都不行。若想在变调时保持速度，算法会复杂一些，另外很有可能会对音质造成损失，但是本着“有总比没有好”的原则，我加了这个功能在采样器里。</p>
+
+<p>第二个问题更复杂，也是我决定自己做采样器的主要原因——常用DAW做音MAD的人可能会注意到，MIDI音符的长度其实起不到什么作用，即使画一个很长的音符，素材也不会被拉伸，要么播完就结束了，要么循环播放。这是因为MIDI作为控制电子乐器的协议完全是实时的，我们看到的一个音符其实由两个事件组成，先按下琴键（note-on），一段时间后松开琴键（note-off）。而采样器看到note-on就会开始发声，此时它还不知道note-off多长时间以后会产生，就无法预先计算音符的长度。</p>
+
+<p>我在网上找不到这个问题的解决方案。说实话我觉得DAW作为一种编辑器却只支持实时协议就很不合理，不过音乐人显然不会把我的意见当回事，所以需要找一种与MIDI标准兼容的办法。我目前尝试一种简单粗暴的做法——把所有发声都延迟一段时间（默认一小节），这段时间内音符的note-off事件也会被采样器收到了（除非音符特别长），然后采样器就能把素材调整到和音符一样长。这样有一个副作用，就是需要把本采样器所在的音轨往前拉一小节，否则无法和其他音轨同步。我把这个功能设为可以随时开启或关闭，称为“自适应模式”。</p>
+
+<p><center><figure>
+    <img src="setting.jpg"
+         alt="将音符序列往前拖拽一小节以使用自适应模式" width="600px"/> <figcaption>
+            <p>将音符序列往前拖拽一小节以使用自适应模式</p>
+        </figcaption>
+</figure>
+</center></p>
+
+<p>除了时间伸缩功能外，本采样器还支持一些连音（Legato）、滑音（Portamento）之类的特性，与时间伸缩相反，这些是DAW擅长而Vegas不擅长的功能。</p>
+
+<p>采样器的下载与说明放在了以下地址：</p>
+
+<ul>
+<li><a href="https://github.com/Chaosinism/SlowSampler">Github</a></li>
+</ul>
     </div>
     <div class="article-footer">
 <blockquote class="mt-2x">
