@@ -5,10 +5,24 @@
     <link>https://chaosinism.github.io/posts/</link>
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 20:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 11:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>网络资源汇总</title>
+      <link>https://chaosinism.github.io/posts/website-list/</link>
+      <pubDate>Tue, 13 Oct 2020 11:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/website-list/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本页面搜集整理网络上可用于多媒体制作的免费资源，自身并不提供资源的下载。&lt;/li&gt;
+&lt;li&gt;部分条目使用&lt;strong&gt;粗体&lt;/strong&gt;标记，表示笔者自身使用该工具/服务的频率较高，是完全主关的评价。本站其他文章也可能会更频繁地涉及到它们。&lt;/li&gt;
+&lt;li&gt;被列举的网站除免费资源外，可能也提供收费资源。此外，资源的使用遵循不同种类的协议，需要使用者自行鉴别。&lt;/li&gt;
+&lt;li&gt;本页面将不定期更新，移除失效链接。部分网站可能有访问区域限制，笔者没有精力逐一验证并注明，还请见谅。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>创作工具考察</title>
@@ -198,17 +212,6 @@
       <description>&lt;p&gt;自制的Vegas脚本，用于MIDI可视化。&lt;/p&gt;
 
 &lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv1027442&#34;&gt;https://www.bilibili.com/read/cv1027442&lt;/a&gt; ）&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>音MAD助手——自制Vegas脚本</title>
-      <link>https://chaosinism.github.io/posts/script-otomad/</link>
-      <pubDate>Fri, 09 Aug 2019 03:57:14 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/script-otomad/</guid>
-      <description>&lt;p&gt;自制的用于辅助鬼畜/音MAD制作的Vegas脚本，在此做一下介绍。&lt;/p&gt;
-
-&lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv392013&#34;&gt;https://www.bilibili.com/read/cv392013&lt;/a&gt; ）&lt;/p&gt;</description>
     </item>
     
   </channel>
