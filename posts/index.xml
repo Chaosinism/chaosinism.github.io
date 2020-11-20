@@ -5,10 +5,30 @@
     <link>https://chaosinism.github.io/posts/</link>
     <description>Recent content in Posts on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Oct 2020 11:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>由Twitter采集的插画线稿数据集</title>
+      <link>https://chaosinism.github.io/posts/lineart-twitter/</link>
+      <pubDate>Thu, 19 Nov 2020 10:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/lineart-twitter/</guid>
+      <description>&lt;p&gt;在Twitter上发现一些可能用于机器（或人工）学习的素材，因此在这里尝试自制一个数据集。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ludum Dare 47参赛体验&amp;作品</title>
+      <link>https://chaosinism.github.io/posts/ld47/</link>
+      <pubDate>Tue, 17 Nov 2020 21:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/ld47/</guid>
+      <description>&lt;p&gt;Ludum Dare是一项游戏制作赛事，参赛者需要在48小时内独立完成一款游戏的制作，游戏用到的绝大多数素材也需要参赛者自制。每届赛事会指定参赛游戏的主题，本次比赛为第47届，主题是“Stuck in a loop”。&lt;/p&gt;
+
+&lt;p&gt;好像以前说过不想太频繁地参加Game Jam，但总之还是参加了，主要想借这种限时高强度创作来转变最近的颓废状态，最后证明没有什么用处，比如比赛过程中每干两个小时活就会开一小时的小差，比如到现在拖了一个多月才开始写这个日志。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>网络资源汇总</title>
@@ -190,28 +210,6 @@
 &lt;p&gt;需注意，本文原始发布时间较早，仅对此问题进行了初步的探索，并未得到一个成熟的解决方案，效果远非理想。另外，目前没有很方便的图形界面来实现文中所述功能，因此建议在对命令行与Python有一定使用经验的前提下阅读。&lt;/p&gt;
 
 &lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv465184&#34;&gt;https://www.bilibili.com/read/cv465184&lt;/a&gt; ）&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Kinect v2与MMD动作捕捉</title>
-      <link>https://chaosinism.github.io/posts/kinect-mmd/</link>
-      <pubDate>Fri, 09 Aug 2019 03:57:42 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/kinect-mmd/</guid>
-      <description>&lt;p&gt;本文探讨MMD与Kinect v2设备不兼容的问题。文章以总结整理网络上的资料与开源项目为主，结合少量的原创工作，最终提出一种解决方案。由于我对这一领域只有初步的了解，若发现文章中有不准确或失去时效性的内容，欢迎批评指正。&lt;/p&gt;
-
-&lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv1750314&#34;&gt;https://www.bilibili.com/read/cv1750314&lt;/a&gt; ）&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MIDI五线谱可视化——自制Vegas脚本</title>
-      <link>https://chaosinism.github.io/posts/script-score/</link>
-      <pubDate>Fri, 09 Aug 2019 03:57:34 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/script-score/</guid>
-      <description>&lt;p&gt;自制的Vegas脚本，用于MIDI可视化。&lt;/p&gt;
-
-&lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv1027442&#34;&gt;https://www.bilibili.com/read/cv1027442&lt;/a&gt; ）&lt;/p&gt;</description>
     </item>
     
   </channel>
