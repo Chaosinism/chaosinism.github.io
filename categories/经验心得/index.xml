@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/</link>
     <description>Recent content in 经验心得 on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 17 Nov 2020 21:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 12:00:00 -0400</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3D建模笔记 - 饭纲丸龙/姬虫百百世</title>
+      <link>https://chaosinism.github.io/posts/mmd-th18/</link>
+      <pubDate>Fri, 25 Jun 2021 12:00:00 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/mmd-th18/</guid>
+      <description>&lt;p&gt;近日我尝试制作3D动画参加“&lt;a href=&#34;https://nicodosai.com/13th/&#34;&gt;第13回东方Nico童祭&lt;/a&gt;”，制作了《东方Project》新作角色*饭纲丸龙*与*姬虫百百世*的MMD模型，简单写一点建模笔记。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>由Twitter采集的插画线稿数据集</title>
@@ -197,19 +206,6 @@
       
       <guid>https://chaosinism.github.io/posts/blog-setup/</guid>
       <description>&lt;p&gt;这个博客差不多成型了，于是总结一下搭建个人主页的过程中使用的工具以及使用体验等等。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>利用语音识别技术辅助制作音源的初步尝试</title>
-      <link>https://chaosinism.github.io/posts/voice-extraction/</link>
-      <pubDate>Sat, 31 Aug 2019 06:52:47 -0400</pubDate>
-      
-      <guid>https://chaosinism.github.io/posts/voice-extraction/</guid>
-      <description>&lt;p&gt;若想由一段音频素材（如一首歌或一段对话）制作出供人力Vocaloid使用的音源，第一步是要在素材中把可以用的发音逐个截取出来，此过程通常较为枯燥费力。因此，本文尝试探索一种结合AI语音识别技术加速该过程的方法。下面介绍一下步骤与工具。&lt;/p&gt;
-
-&lt;p&gt;需注意，本文原始发布时间较早，仅对此问题进行了初步的探索，并未得到一个成熟的解决方案，效果远非理想。另外，目前没有很方便的图形界面来实现文中所述功能，因此建议在对命令行与Python有一定使用经验的前提下阅读。&lt;/p&gt;
-
-&lt;p&gt;（原始投稿地址：&lt;a href=&#34;https://www.bilibili.com/read/cv465184&#34;&gt;https://www.bilibili.com/read/cv465184&lt;/a&gt; ）&lt;/p&gt;</description>
     </item>
     
   </channel>
