@@ -5,10 +5,19 @@
     <link>https://chaosinism.github.io/</link>
     <description>Recent content on 临时个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Jun 2021 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jan 2022 12:00:00 -0500</lastBuildDate>
     
         <atom:link href="https://chaosinism.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>搭建个人主页的心得</title>
+      <link>https://chaosinism.github.io/posts/blog-setup/</link>
+      <pubDate>Sat, 31 Aug 2019 07:38:27 -0400</pubDate>
+      
+      <guid>https://chaosinism.github.io/posts/blog-setup/</guid>
+      <description>&lt;p&gt;这个博客差不多成型了，于是总结一下搭建个人主页的过程中使用的工具以及使用体验等等。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>利用语音识别技术辅助制作音源的初步尝试</title>

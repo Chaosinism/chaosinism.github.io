@@ -3,6 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chaosinism.github.io/posts/</loc>
+    <lastmod>2022-01-23T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/</loc>
+    <lastmod>2022-01-23T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chaosinism.github.io/posts/bored/</loc>
+    <lastmod>2022-01-23T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://chaosinism.github.io/posts/mmd-th18/</loc>
     <lastmod>2021-06-25T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -28,12 +47,6 @@
   </url>
   
   <url>
-    <loc>https://chaosinism.github.io/posts/</loc>
-    <lastmod>2021-06-25T12:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://chaosinism.github.io/tags/</loc>
     <lastmod>2021-06-25T12:00:00-04:00</lastmod>
     <priority>0</priority>
@@ -47,12 +60,6 @@
   
   <url>
     <loc>https://chaosinism.github.io/tags/%E4%B8%9C%E6%96%B9project/</loc>
-    <lastmod>2021-06-25T12:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chaosinism.github.io/</loc>
     <lastmod>2021-06-25T12:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
