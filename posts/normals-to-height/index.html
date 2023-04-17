@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Vegas MIDI脚本</title>
+    <link rel="stylesheet" href="../../pico.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                showMathMenu: false, //disables context menu
+                tex2jax: {
+                inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+               }
+        });
+    </script>
+</head>
+
+<body>
+<header class="container">
+    <hgroup>
+      <a href="../..">[返回首页]</a>
+      <h1>由法线贴图生成高度图的算法</h1>
+      <p>2020-03-02</p>
+    </hgroup>
+    
+    <p>（B站投稿地址：<a href="https://www.bilibili.com/read/cv5880984">https://www.bilibili.com/read/cv5880984</a> ）</p>
+    
+</header>
+
+<main class="container">
+
+      <p>自动为绘画线稿生成3D信息，从而自动计算光影，这是我持续在关注的一种技术。一直想系统地介绍一下，但不知从哪里说起。今天先简单介绍其中一种方法。</p>
+
+<p><center><figure>
+    <img src="medusa.jpg"
+         alt="法线/置换贴图与使用后的效果（线稿来自《碧蓝幻想》美术设定集）" width="800px"/> <figcaption>
+            <p>法线/置换贴图与使用后的效果（线稿来自《碧蓝幻想》美术设定集）</p>
+        </figcaption>
+</figure>
+</center></p>
+
+<h2 id="法线贴图">法线贴图</h2>
+
+<p>法线贴图(Normal Map)利用贴图每个像素的RGB值储存该点的三维法线矢量，然后拿它来计算贴图表面的光线反射，这样低多边形的3D模型也能体现出光照细节。人们经常用它来改善游戏中的3D材质。</p>
+
+<p>不过我更关心的是另一种应用——对于一张绘画线稿，如果也能得到一张法线贴图，就能自动计算其光影，从而省去很多手动上色的步骤。<a href="https://v-sense.scss.tcd.ie/">V-Sense</a>研究小组曾在下面的论文中提出利用深度学习生成法线贴图的方法：</p>
+
+<blockquote>
+<p>Hudon, Matis, Mairéad Grogan, and Aljosa Smolic. &ldquo;Deep normal estimation for automatic shading of hand-drawn characters.&rdquo; <em>Proceedings of the European Conference on Computer Vision (ECCV)</em>. 2018.</p>
+</blockquote>
+
+<p>论文的成果就是开源项目<a href="https://github.com/V-Sense/DeepNormals">DeepNormals</a>，虽然它看起来不太受学术界关注，但我个人的使用体验倒是很不错，强过不少更热门的自动上色方案。</p>
+
+<h2 id="高度图-置换贴图">高度图/置换贴图</h2>
+
+<p>最近，DeepNormals的作者发表了一篇后续文章，提出在生成法线贴图后可以进一步将其转化为高度图：</p>
+
+<blockquote>
+<p>Hudon, Matis, et al. &ldquo;Augmenting Hand-Drawn Art with Global Illumination Effects through Surface Inflation.&rdquo; <em>European Conference on Visual Media Production</em>. 2019.</p>
+</blockquote>
+
+<p>高度图可以作为置换贴图(Displacement Map)，贴图的每个点会沿法线进行位移，从而造成真实的三维凹凸效果。这种方法能做到一些法线贴图无法做到的事：</p>
+
+<ul>
+<li>法线贴图没有自阴影，而置换法支持；</li>
+<li>可以用图形学模拟距离感相关的技法，如镜头虚化和色彩远近法；</li>
+<li>置换后可以在立体空间小幅旋转图片而不产生违和感，甚至可以由此将2D图片转为3D模型。</li>
+</ul>
+
+<p>当然它也有缺点，比如运算慢，但是如果我们考虑将其应用于绘画/动画而非实时渲染，这一点就不是特别重要了，因此我还是很愿意学习这个方法的。</p>
+
+<h2 id="算法">算法</h2>
+
+<p>对于如何生成这样的高度图，论文中给出的算法其实很简单粗暴。假设$(u,v)$为贴图坐标，相应的高度为$Z(u,v)$（也就是待求量），那么沿$u$方向可以计算出切线向量</p>
+
+<p>$\mathbf{t}_{uv}^{\parallel}=[1,0,\frac{dZ(u,v)}{du}]$，用离散形式表示其实就是</p>
+
+<p>$\mathbf{t}_{uv}^{\parallel}=[1,0,Z(u+1,v)-Z(u,v)]$；同理，沿$v$方向可以计算出另一个切线向量</p>
+
+<p>$\mathbf{t}_{uv}^{\perp}=[0,1,Z(u,v+1)-Z(u,v)]$。</p>
+
+<p>我们已经知道了贴图每个点的法线向量$\mathbf{n}_{uv}$，它应当与两个切线都垂直，即点乘得0。于是定义一个“能量”函数：</p>
+
+<p>$E=\sum_{u,v} (\mathbf{t}^{\parallel}\cdot\mathbf{n})^2+(\mathbf{t}^{\perp}\cdot\mathbf{n})^2$</p>
+
+<p>函数的值越小就说明高度图越准确。它对$Z(u,v)$的偏导只含一次项，用梯度下降之类的方法很容易进行优化。</p>
+
+<h2 id="自制脚本">自制脚本</h2>
+
+<p>根据论文的说法，这个算法早就有了，奇怪的是我以前也考察过一些能转换法线和高度图的工具，比如<a href="https://github.com/kmkolasinski/AwesomeBump">AwesomeBump</a>或<a href="https://code.google.com/archive/p/gimp-normalmap/">GIMP法线贴图插件</a>，它们都没有使用这种方法，而是只沿一个方向由法线累计高度，误差要大很多，不太清楚其中的缘由。</p>
+
+<p>这一篇新论文自身也并没有附带开源代码，所幸算法简单，于是我用Scipy的优化器自己实现了一下，放在下面这个仓库。以后再有计算法线相关的内容可能也会在这里更新：</p>
+
+<p><a href="https://github.com/Chaosinism/NormalMapTool">https://github.com/Chaosinism/NormalMapTool</a></p>
+    </div>
+</main>

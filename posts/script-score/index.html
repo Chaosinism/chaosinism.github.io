@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Vegas MIDI脚本</title>
+    <link rel="stylesheet" href="../../pico.css">
+</head>
+
+<body>
+<header class="container">
+    <hgroup>
+      <a href="../..">[返回首页]</a>
+      <h1>音MAD助手——自制Vegas脚本</h1>
+      <p>2019-08-09</p>
+    </hgroup>
+    
+    <p>自制的Vegas脚本，用于MIDI可视化。</p>
+    <p>（原始投稿地址：<a href="https://www.bilibili.com/read/cv1027442">https://www.bilibili.com/read/cv1027442</a> ）</p>
+    
+</header>
+
+<main class="container">
+
+<h2 id="基本信息">基本信息</h2>
+
+<ul>
+<li>脚本功能：以自定义图案为音符，画出MIDI文件的五线谱。</li>
+<li>源码地址：<a href="https://github.com/Chaosinism/vegas_scripts">https://github.com/Chaosinism/vegas_scripts</a></li>
+<li>下载地址：<a href="https://github.com/Chaosinism/vegas_scripts/releases">https://github.com/Chaosinism/vegas_scripts/releases</a></li>
+<li>适用环境：Windows, Sony Vegas Pro 13以上</li>
+</ul>
+
+<h2 id="动机与背景">动机与背景</h2>
+
+<p><center><figure>
+    <img src="1.jpg"
+         alt="使用效果" width="500px"/> <figcaption>
+            <p>使用效果</p>
+        </figcaption>
+</figure>
+</center>
+在视频<a href="https://www.bilibili.com/video/av30077020/">【组曲】芳文社Mashup</a>中，我模仿Youtube上的视频作者grantwoolard制作画面效果。他的特色是使用音乐家的头像画出音频的五线谱。</p>
+
+<p><center><figure>
+    <img src="2.png"
+         alt="Classical Music Mashup, by grantwoolard" width="500px"/> <figcaption>
+            <p>Classical Music Mashup, by grantwoolard</p>
+        </figcaption>
+</figure>
+</center>
+我没有查到他是如何制作的，于是自己写了一个Vegas脚本，可以根据MIDI文件和自定义的图像文件来制造出这种效果。</p>
+
+<h2 id="使用说明">使用说明</h2>
+
+<p>以下陈述脚本的安装与使用方法。</p>
+
+<h4 id="安装方法">安装方法</h4>
+
+<ul>
+<li>在 <a href="https://github.com/Chaosinism/vegas_scripts/releases">https://github.com/Chaosinism/vegas_scripts/releases</a> 下载脚本，Vegas 13的用户请下载staff_visualizer_vegas13.zip，Vegas 14、15和16的用户请下载staff_visualizer_vegas1415.zip。</li>
+<li>下载zip文件后解压，确保DLL/NAudio.dll未处于锁定状态。否则，在右键-【属性】中点击【解除锁定】。</li>
+</ul>
+
+<p><center><figure>
+    <img src="3.png"
+         alt="解除DLL文件锁定" width="300px"/> <figcaption>
+            <p>解除DLL文件锁定</p>
+        </figcaption>
+</figure>
+</center>
+- 将所有文件拷贝至C:\Program Files\Sony\Vegas Pro XX\Script Menu，其中“XX”为Vegas版本号，如“13.0”、“14.0”等。</p>
+
+<h4 id="使用方法">使用方法</h4>
+
+<ul>
+<li>使用Vegas菜单中的【工具】-【脚本化】-【staff_visualizer】来启动脚本。</li>
+<li>按对话框提示，选择一个MIDI文件，与一个作为音符的图像文件（图片和视频皆可，只要是Vegas支持的格式）。</li>
+</ul>
+
+<p><center><figure>
+    <img src="5.png"
+         alt="脚本所需的输入" width="300px"/> <figcaption>
+            <p>脚本所需的输入</p>
+        </figcaption>
+</figure>
+</center>
+- 在新对话框中调整选项。例如，如果要在下图中红色区域插入五线谱，则各参数的意义如图所示。</p>
+
+<p><center><figure>
+    <img src="6.png" width="500px"/>
+</figure>
+</center>
+<center><figure>
+    <img src="7.png"
+         alt="选项示意图" width="500px"/> <figcaption>
+            <p>选项示意图</p>
+        </figcaption>
+</figure>
+</center>
+- 点击完成，Vegas将自动生成数个视频轨道，效果如图。</p>
+
+<p><center><figure>
+    <img src="8.png"
+         alt="输出示意图（屏幕）" width="500px"/> <figcaption>
+            <p>输出示意图（屏幕）</p>
+        </figcaption>
+</figure>
+</center>
+<center><figure>
+    <img src="9.png"
+         alt="输出示意图（轨道）" width="500px"/> <figcaption>
+            <p>输出示意图（轨道）</p>
+        </figcaption>
+</figure>
+</center></p>
+
+<h2 id="参考与致谢">参考与致谢</h2>
+
+<ul>
+<li><a href="https://github.com/evankale/VegasScripts">https://github.com/evankale/VegasScripts</a></li>
+<li><a href="https://github.com/naudio/NAudio">https://github.com/naudio/NAudio</a></li>
+</ul>
+</main>

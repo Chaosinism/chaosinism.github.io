@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>Vegas MIDI脚本</title>
+    <link rel="stylesheet" href="../../pico.css">
+</head>
+
+<body>
+<header class="container">
+    <hgroup>
+      <a href="../..">[返回首页]</a>
+      <h1>Kinect v2与MMD动作捕捉</h1>
+      <p>2019-08-09</p>
+    </hgroup>
+    
+    <p>本文探讨MMD与Kinect v2设备不兼容的问题。文章以总结整理网络上的资料与开源项目为主，结合少量的原创工作，最终提出一种解决方案。由于我对这一领域只有初步的了解，若发现文章中有不准确或失去时效性的内容，欢迎批评指正。</p>
+    <p>（原始投稿地址：<a href="https://www.bilibili.com/read/cv1750314">https://www.bilibili.com/read/cv1750314</a> ）</p>
+    
+</header>
+
+<main class="container">
+  
+<h2 id="问题描述">问题描述</h2>
+
+<p>Kinect是微软开发的动作捕捉设备，最初用于Xbox 360与Xbox One。尽管已经停产的Kinect可能不是一款成功的游戏外设，对于业余3D动画作者来说，它提供了一种低成本的动作捕捉方法，多种3D动画软件均存在Kinect的插件。</p>
+
+<p><center><figure>
+    <img src="1.png"
+         alt="Kinect(左)与Kinect v2(右)" width="500px"/> <figcaption>
+            <p>Kinect(左)与Kinect v2(右)</p>
+        </figcaption>
+</figure>
+</center>
+MMD内置的动作捕捉功能同样基于Kinect硬件。然而，用于Windows的Kinect共有两代产品，MMD只支持其中的初代，而不支持第二代——Kinect v2。如果新用户希望购置一台设备用于MMD动画的动作捕捉，那么自然是推荐购买Kinect初代。然而也有用户已经拥有Kinect v2，并希望将其用于MMD。因此，本文接下来将介绍此设备不被兼容的原因，并探讨解决这一问题的方法。</p>
+
+<h2 id="问题分析">问题分析</h2>
+
+<p>MMD的动作捕捉功能依赖于以下几个组件——OpenNI，Nite与DxOpenNI.dll。它们的功能以及采集动作的流程如下：</p>
+
+<ul>
+<li>OpenNI：从Kinect摄像头中提取颜色、深度等图像信息。</li>
+<li>Nite：由图像信息推导出被采集者身体各部位的空间位置。</li>
+<li>DxOpenNI.dll：MMD插件，将身体部位的坐标传给MMD，转化为骨骼运动。</li>
+</ul>
+
+<p>OpenNI与Nite支持数种传感器硬件，其中包含初代Kinect，但不包含v2。因此要想增加MMD对Kinect v2的兼容性，必须做到以下几点——替换OpenNI与Nite，并修改DxOpenNI.dll。</p>
+
+<p>OpenNI的替代品首选微软官方的Kinect SDK 2.0，事实上已有N站UP主发布了基于Kinect SDK的新DLL（ <a href="https://www.nicovideo.jp/watch/sm26054087">https://www.nicovideo.jp/watch/sm26054087</a> ）。然而它在捕捉躯干与腿部运动时均有较大的缺陷，可用性并不高。据我所知该bug至今未被修复，我尝试修改代码也未果，因此本文暂且不考虑使用Kinect SDK。</p>
+
+<p>另一方法是采用这些组件的后继版本，OpenNI 2与Nite 2。虽然它们默认不支持Kinect v2，但有人编写了新驱动使它们能够顺利操控该设备。下面的章节介绍这种方法。</p>
+
+<h2 id="解决方案">解决方案</h2>
+
+<p>首先，安装OpenNI 2与Nite 2，并编写能够调用它们的新DxOpenNI.dll。这部分工作已有人完成，作者为Heresy，他写了以下文章来介绍：</p>
+
+<p><a href="https://kheresy.wordpress.com/2013/03/07/dxopenni-for-openni-2/">https://kheresy.wordpress.com/2013/03/07/dxopenni-for-openni-2/</a></p>
+
+<p>操作步骤在该文章中已经被描述得很详细，本文不再重复。但文章中的下载链接有一些已经失效，这里补充一些各组件的下载地址。</p>
+
+<p><strong>OpenNI 2</strong>：<a href="https://structure.io/openni">https://structure.io/openni</a> ，下载Windows (x86)版。</p>
+
+<p><strong>Nite 2</strong>：<a href="https://drive.google.com/file/d/0B3e4_6C5_YOjQWtCcVl3VnRsWG8/">https://drive.google.com/file/d/0B3e4_6C5_YOjQWtCcVl3VnRsWG8/</a></p>
+
+<p>上面的地址可能不在墙内，另有一个百度盘（ <a href="http://pan.baidu.com/s/1gd9XdIV">http://pan.baidu.com/s/1gd9XdIV</a> ）也提供这两个组件，注意选择系统是Windows (x86)、版本号为2开头的文件来下载。</p>
+
+<p><strong>DxOpenNI.dll</strong>：<a href="https://bowlroll.net/file/185452">https://bowlroll.net/file/185452</a> ，在文件夹“DxOpenNI2_by_Heresy”中。</p>
+
+<p>按照Heresy的文章将以上组件都安装好后，要另为OpenNI 2准备驱动。这里需要使用的驱动是libfreenect2（ <a href="https://github.com/OpenKinect/libfreenect2">https://github.com/OpenKinect/libfreenect2</a> ）。</p>
+
+<p>首先在<a href="https://github.com/daynix/UsbDk/releases">https://github.com/daynix/UsbDk/releases</a> 下载并安装UsbDk_1.0.19_x64.msi。</p>
+
+<p>然后是libfreenect2本体，这里要注意，MMD是32位软件，所以libfreenect2和OpenNI 2、Nite 2同样，必须采用32位版本，作者没有提供，我自己编译了一下（编译的环境是Visual Studio 2013，可能会需要相应的Visual C++ Redistributable Packages）。编译后的文件位于之前的zip包里（ <a href="https://bowlroll.net/file/185452">https://bowlroll.net/file/185452</a> ）的文件夹“Driver”。如果顺利完成了前面的步骤，现在MMD目录下应该有一个“OpenNI2”文件夹，将编译后的文件均复制到“OpenNI2\Drivers”即可。</p>
+
+<p>若以上操作均成功，MMD将可以使用Kinect v2进行动作捕捉。</p>
+
+<h2 id="补充说明">补充说明</h2>
+
+<h4 id="附录1-libfreenect2的编译">附录1：libfreenect2的编译</h4>
+
+<p>似乎libfreenect2是推荐用户自己进行编译的，因此我也不确定我编译的版本是否所有人都能使用。Github中虽然有详尽的编译步骤，但都没有考虑到32位的情况。我根据自己的体验总结了以下几个注意事项，如果有人想自行编译，可作参考：</p>
+
+<ol>
+<li><p>请使用Visual Studio 2012或2013，因为之后的版本只能编译64位（这个似乎是CUDA的问题）。</p></li>
+
+<li><p>“Build libusb”步骤中的CMD文件需要修改，13行Platform的值改成x86，18~20行x64改Win32。</p></li>
+
+<li><p>TurboJPEG和GLFW都安装32位版，但是文件夹仍按照步骤里的指示来命名。</p></li>
+
+<li><p>最后编译的命令（cmake .. -G &ldquo;Visual Studio 12 2013 Win64&rdquo;）省略掉Win64字样。</p></li>
+</ol>
+
+<h4 id="附录2-减少抖动">附录2：减少抖动</h4>
+
+<p>按以上方法进行动作捕捉时，有时会感觉模型的骨骼一直在抖动，针对这一点有以下几个改善方法：</p>
+
+<ol>
+<li>我稍微修改了DxOpenNI.dll加入平滑功能，新文件位于之前的zip包里（ <a href="https://bowlroll.net/file/185452">https://bowlroll.net/file/185452</a> ）的文件夹“DxOpenNI2_Modified”，可以考虑采取这个版本来减少抖动。这里我的编译环境换成了Visual Studio 2017。（2013无法成功编译，原因尚不明。）</li>
+<li>捕捉开始时，可以做出易于识别的姿势，方便机器对人体进行更好的定位，比如下面这个“PSI Pose”。</li>
+<li>使用VMD Reduction Tool（ <a href="https://sites.google.com/site/moggproject/enghome">https://sites.google.com/site/moggproject/enghome</a> ）。</li>
+</ol>
+
+<p><center><figure>
+    <img src="2.gif"
+         alt="PSI Pose" width="100px"/> <figcaption>
+            <p>PSI Pose</p>
+        </figcaption>
+</figure>
+</center></p>
+    </div>
+</main>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>废旧项目墓场</title>
+    <link rel="stylesheet" href="pico.css">
+</head>
+<body>
+    <header class="container">
+        <hgroup>
+          <h1>废旧项目墓场</h1>
+          <ul>
+            <li>
+                这里原本是与Bilibili视频账号<a href="https://space.bilibili.com/89358">Chaosinism</a>配套发布内容的个人博客，收录了作者2018至2022上半年的若干业余项目（3D模型、开源小游戏、视频音频制作工具脚本等）。
+                因长时间未更新，网站的多个功能无法正常工作，文章和项目也失去实效性，甚至发现内容存在错误。因此现将网站归档，仅保留尚具参考价值的一部分内容。
+            </li>
+            <li>
+                作者并未停止相关兴趣爱好，2022年后的新项目与重启的旧项目将迁移到<a href="https://github.com/chsh2/nijiGPen">另外的GitHub账号</a>中，目前仍待规划。
+            </li>
+          </ul>
+        </hgroup>
+
+    </header>
+
+    <main class="container">
+        <article>
+            <hgroup>
+                <h2>Vegas MIDI脚本</h2>
+                <i>[ 2018~2019 / 现由他人维护 ]</i>
+            </hgroup>
+            <p>
+              以C#编写的脚本，运行于视频编辑软件Vegas Pro中。脚本读取MIDI文件，按照音符位置插入对应的视频、音频事件，并按照音符音高对事件进行调节变换。
+              可用于音MAD制作与五线谱可视化视频。
+            </p>
+            <p>
+              另有<a href="https://space.bilibili.com/38207429/">B站作者</a>参考本项目的部分代码，制作了用途相似但功能更为强大的脚本。若仍有该方面需求或疑问，建议联系这位作者。
+            </p>
+            <footer>
+                <small>源代码：<a href="https://github.com/Chaosinism/vegas_scripts">GitHub</a></small>
+                <br>
+                <small>文章介绍：<a href="posts/script-otomad">音MAD助手</a> | <a href="posts/script-score">五线谱可视化</a></small>
+            </footer>
+          </article>
+
+          <article>
+            <hgroup>
+                <h2>SlowSampler采样器</h2>
+                <i>[ 2020 / 停止更新，有可能重启 ]</i>
+            </hgroup>
+            <p>
+              基于Pure Data语言的开源VST音频采样器，在常规的变调功能外，注重音频样本的时间伸缩，并有独特的延时调整功能，将音频素材重采样至与每个MIDI音符同样的长度。
+            </p>
+            <footer>
+                <small>源代码：<a href="https://github.com/Chaosinism/SlowSampler">GitHub</a></small>
+                <br>
+                <small>视频介绍：<a href="https://www.bilibili.com/video/BV1Y5411h7s6/">BiliBili</a></small>
+            </footer>
+          </article>
+
+          <article>
+            <hgroup>
+                <h2>Kinect v2 MMD补丁</h2>
+                <i>[ 2019 / 停止更新 ]</i>
+            </hgroup>
+            <p>
+              针对MikuMikuDance (MMD)的动作捕捉模块仅能使用Kinect v1，而不兼容Kinect v2的问题所做的一些调研。介绍一些相关的开源项目，以及一个可能的解决方案。
+            </p>
+            <footer>
+                <small>组件下载：<a href="https://bowlroll.net/file/185452">BowlRoll</a></small>
+                <br>
+                <small>文章介绍：<a href="posts/kinect-mmd">Kinect v2与MMD动作捕捉</a></small>
+            </footer>
+          </article>
+
+          <article>
+            <hgroup>
+                <h2>法线-高度贴图转换脚本</h2>
+                <i>[ 2020 / 停止更新 ]</i>
+            </hgroup>
+            <p>
+              Python脚本，利用科学计算库的优化算法，将法线贴图转换为高度/深度贴图。
+            </p>
+            <p>
+              在此项目后，作者继续考察为2D绘画生成法线与高度3D信息的方法，推出Blender插件<a href="https://github.com/chsh2/nijiGPen">NijiGPen</a>，包含一部分类似的功能。
+            </p>
+            <footer>
+                <small>源代码：<a href="https://github.com/Chaosinism/NormalMapTool">GitHub</a></small>
+                <br>
+                <small>文章介绍：<a href="posts/normals-to-height">由法线贴图生成高度图的算法</a></small>
+            </footer>
+          </article>
+
+          <article>
+            <hgroup>
+                <h2>MMD模型配布</h2>
+                <i>[ 2018~2022 ]</i>
+            </hgroup>
+            <p>
+              《东方Project》《Love Live!》等作品的自制MMD模型。<br>
+              早期模型是在たむたむす～る编辑器的基础上使用Blender修改而成；<br>
+              后来改用VRoid Studio与Blender进行建模；<br>
+              再之后改为全过程使用Blender进行建模。
+            </p>
+            <p>
+              此外也有基于真实人物的模型，它们是利用MakeHuman与Blender制作而成。
+            </p>
+            <footer>
+                <small>模型下载：<a href="https://bowlroll.net/user/261124">BowlRoll</a></small>
+            </footer>
+          </article>
+
+          <article>
+            <hgroup>
+                <h2>独立游戏限时竞赛</h2>
+                <i>[ 2018~2020 ]</i>
+            </hgroup>
+            <p>
+              参加Game Jam的记录，多为在限定时间内（如48或72小时）内独自制作游戏的竞赛。这些游戏的代码与美术、音乐素材都是开源的。<br>
+              早期使用的引擎为Construct 2，后来改用Godot 3。
+            </p>
+            <table role="grid">
+              <thead>
+                <tr>
+                  <th scope="col"><b>游戏标题</b></th>
+                  <th scope="col"><b>赛事</b></th>
+                  <th scope="col"><b>演示地址</b></th>
+                  <th scope="col"><b>源代码</b></th>
+                  <th scope="col"><b>视频介绍</b></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Islanders</th>
+                  <td>Ludum Dare 38</td>
+                  <td><a href="https://chaosinism.github.io/LudumDare38">站内</a></td>
+                  <td><a href="https://github.com/Chaosinism/LudumDare38">GitHub</a></td>
+                  <td>无</td>
+                </tr>
+                <tr>
+                  <th scope="row">Knights and Kings</th>
+                  <td>Ludum Dare 40</td>
+                  <td><a href="https://chaosinism.github.io/LudumDare40">站内</a></td>
+                  <td><a href="https://github.com/Chaosinism/LudumDare40">GitHub</a></td>
+                  <td>无</td>
+                </tr>
+                <tr>
+                  <th scope="row">Life with Words</th>
+                  <td>Ludum Dare 45</td>
+                  <td><a href="https://chaosinism.github.io/LudumDare45">站内</a></td>
+                  <td><a href="https://github.com/Chaosinism/LudumDare45">GitHub</a></td>
+                  <td><a href="https://www.bilibili.com/video/av71007586">BiliBili</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Spring Festival in Gensokyo</th>
+                  <td>Touhou Fan Game Jam 5</td>
+                  <td><a href="https://chaosinism.itch.io/thjam5">Itch.io</a></td>
+                  <td><a href="https://github.com/Chaosinism/thjam5">GitHub</a></td>
+                  <td><a href="https://www.bilibili.com/video/BV1M7411i7KD">BiliBili</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Scrolling Hero Adventure</th>
+                  <td>2020 9 Card Game PnP Design Contest</td>
+                  <td><a href="https://chaosinism.itch.io/scrolling-hero-adventure">Itch.io</a></td>
+                  <td>无</td>
+                  <td>无</td>
+                </tr>
+                <tr>
+                  <th scope="row">Lethal Loop</th>
+                  <td>Ludum Dare 47</td>
+                  <td><a href="https://chaosinism.itch.io/lethal-loop">Itch.io</a></td>
+                  <td><a href="https://github.com/Chaosinism/LudumDare47">GitHub</a></td>
+                  <td><a href="https://www.bilibili.com/video/av842367165">BiliBili</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <footer>
+                <small>Itch.io主页：<a href="https://chaosinism.itch.io/">Chaosinism</a></small>
+            </footer>
+          </article>
+    </main>
+</body>
