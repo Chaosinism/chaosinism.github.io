@@ -1,1 +1,0 @@
-{"_id":"5f50ba90-c84b-11ea-b1e5-03ff23d9178b","_parent":"normals-to-height","name":"Chaosinism","email":"","message":"@跑面\r\n把这个Python程序转换成可执行文件很难，因为其中用到科学计算的库，我没法轻易做到。\r\n\r\n其实运行Python程序很容易，网上有很多基础教程，比如这个：https://www.cnblogs.com/yuanzm/p/4089856.html\r\n按照里面的步骤，但最后用pip安装scipy，而不用安装文章提到的tornado。","date":"2020-07-17T16:34:23.818Z"}
